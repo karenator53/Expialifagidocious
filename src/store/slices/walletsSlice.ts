@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit'
 import * as api from '../../services/api'
+import { sonicApi } from '../../services/sonicApi'
 
 export type Wallet = api.Wallet;
 
@@ -39,6 +40,25 @@ export const deleteWalletAsync = createAsyncThunk(
   }
 );
 
+export const fetchWalletData = createAsyncThunk(
+  'wallets/fetchWalletData',
+  async (address: string) => {
+    const [balance, transactions, price] = await Promise.all([
+      sonicApi.getWalletBalance(address),
+      sonicApi.getTransactions(address),
+      sonicApi.getTokenPrice()
+    ]);
+
+    return {
+      address,
+      balance,
+      transactions,
+      currentPrice: price,
+      lastUpdated: Date.now()
+    };
+  }
+);
+
 const walletsSlice = createSlice({
   name: 'wallets',
   initialState,
@@ -66,6 +86,22 @@ const walletsSlice = createSlice({
       })
       .addCase(deleteWalletAsync.fulfilled, (state, action) => {
         state.items = state.items.filter(wallet => wallet.id !== action.payload);
+      })
+      .addCase(fetchWalletData.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(fetchWalletData.fulfilled, (state, action) => {
+        state.loading = false;
+        const index = state.items.findIndex(w => w.address === action.payload.address);
+        if (index >= 0) {
+          state.items[index] = action.payload;
+        } else {
+          state.items.push(action.payload);
+        }
+      })
+      .addCase(fetchWalletData.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message;
       });
   },
 })
