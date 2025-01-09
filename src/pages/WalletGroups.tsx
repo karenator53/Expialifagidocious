@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWalletData } from '../store/slices/walletsSlice';
 
-export const WalletGroups = () => {
+export default function WalletGroups() {
   const dispatch = useDispatch();
   const { wallets, loading } = useSelector((state: RootState) => state.wallets);
 
@@ -38,4 +38,4 @@ export const WalletGroups = () => {
       ))}
     </div>
   );
-};
+}
