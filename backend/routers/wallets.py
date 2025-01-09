@@ -10,7 +10,19 @@ async def get_wallets(request: Request):
     wallets = []
     cursor = request.app.mongodb["wallets"].find()
     async for document in cursor:
-        wallets.append(Wallet(**document))
+        wallet_data = {
+            "id": str(document["_id"]),
+            "name": document.get("name", "Unnamed Wallet"),
+            "address": document["address"],
+            "group": document.get("group", "Default Group"),
+            "balance": document.get("balance"),
+            "currentPrice": document.get("currentPrice"),
+            "transactions": document.get("transactions", []),
+            "lastUpdated": document.get("lastUpdated"),
+            "created_at": document.get("created_at"),
+            "updated_at": document.get("updated_at")
+        }
+        wallets.append(Wallet(**wallet_data))
     return wallets
 
 @router.post("/wallets", response_model=Wallet)

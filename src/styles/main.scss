@@ -115,9 +115,9 @@ body {
 // Grid layout
 .wallet-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
 // Form styles
@@ -282,5 +282,77 @@ h1 {
   100% {
     transform: scale(0.5) translateY(-20px);
     opacity: 0;
+  }
+}
+
+.wallet-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+
+  .wallet-card-header {
+    margin-bottom: 1rem;
+    
+    h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .wallet-address {
+      font-family: monospace;
+      color: #666;
+    }
+
+    .wallet-group {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      background: #f0f0f0;
+      border-radius: 4px;
+      margin-left: 1rem;
+    }
+  }
+
+  .wallet-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .stat {
+      label {
+        color: #666;
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+
+      value {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .transactions-list {
+    .transaction {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+
+      .type {
+        &.buy { color: #4caf50; }
+        &.sell { color: #f44336; }
+      }
+
+      .amount {
+        font-family: monospace;
+      }
+
+      .date {
+        color: #666;
+      }
+    }
   }
 }

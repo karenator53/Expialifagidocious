@@ -28,7 +28,24 @@ export const fetchWallets = createAsyncThunk(
 export const addWalletAsync = createAsyncThunk(
   'wallets/addWallet',
   async (wallet: Omit<Wallet, 'id' | 'created_at' | 'updated_at'>) => {
-    return await api.addWallet(wallet);
+    // First add the wallet to the database
+    const newWallet = await api.addWallet(wallet);
+    
+    // Then fetch its Sonic data
+    const [balance, transactions, price] = await Promise.all([
+      sonicApi.getWalletBalance(wallet.address),
+      sonicApi.getTransactions(wallet.address),
+      sonicApi.getTokenPrice()
+    ]);
+
+    // Combine the data
+    return {
+      ...newWallet,
+      balance,
+      transactions,
+      currentPrice: price,
+      lastUpdated: Date.now()
+    };
   }
 );
 
@@ -56,6 +73,29 @@ export const fetchWalletData = createAsyncThunk(
       currentPrice: price,
       lastUpdated: Date.now()
     };
+  }
+);
+
+// Add a thunk to refresh wallet data
+export const refreshWalletData = createAsyncThunk(
+  'wallets/refreshData',
+  async (wallet: Wallet) => {
+    const [balance, transactions, price] = await Promise.all([
+      sonicApi.getWalletBalance(wallet.address),
+      sonicApi.getTransactions(wallet.address),
+      sonicApi.getTokenPrice()
+    ]);
+
+    // Update the wallet in the database
+    const updatedWallet = await api.updateWallet(wallet.id, {
+      ...wallet,
+      balance,
+      currentPrice: price,
+      transactions,
+      lastUpdated: Date.now()
+    });
+
+    return updatedWallet;
   }
 );
 
@@ -102,6 +142,12 @@ const walletsSlice = createSlice({
       .addCase(fetchWalletData.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message;
+      })
+      .addCase(refreshWalletData.fulfilled, (state, action) => {
+        const index = state.items.findIndex(w => w.id === action.payload.id);
+        if (index >= 0) {
+          state.items[index] = action.payload;
+        }
       });
   },
 })

@@ -1,13 +1,36 @@
-from pydantic import BaseModel, Field
-from typing import Optional
 from datetime import datetime
-from uuid import uuid4
+from typing import Optional, List
+from pydantic import BaseModel
+
+class Transaction(BaseModel):
+    hash: str
+    timestamp: int
+    type: str
+    tokenSymbol: str
+    amount: float
+    price: float
 
 class Wallet(BaseModel):
-    id: str = Field(default_factory=lambda: str(uuid4()))
+    id: Optional[str] = None
+    name: str
     address: str
-    chain: str
-    balance: str
-    group_id: Optional[str] = None
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    group: str
+    balance: Optional[float] = None
+    currentPrice: Optional[float] = None
+    transactions: Optional[List[Transaction]] = None
+    lastUpdated: Optional[int] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "name": "Main Wallet",
+                "address": "0x123...",
+                "group": "Personal",
+                "balance": 100.5,
+                "currentPrice": 1800.00,
+                "transactions": [],
+                "lastUpdated": 1677649200000
+            }
+        }

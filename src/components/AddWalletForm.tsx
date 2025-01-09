@@ -15,9 +15,10 @@ export default function AddWalletForm() {
     if (!address.trim()) return
 
     dispatch(addWalletAsync({
+      name: `Wallet ${address.slice(0, 6)}`,
       address: address.trim(),
-      chain,
-      balance: '0',
+      group: chain.toUpperCase(),
+      balance: 0
     }))
 
     // Create multiple sparkles around the form

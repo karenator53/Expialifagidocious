@@ -2,12 +2,22 @@ const API_BASE_URL = 'http://localhost:8000/api';
 
 export interface Wallet {
   id: string;
+  name: string;
   address: string;
-  chain: 'sonic' | 'base' | 'solana';
-  balance: string;
-  group_id?: string;
+  group: string;
   created_at: string;
   updated_at: string;
+  balance?: number;
+  currentPrice?: number;
+  transactions?: {
+    hash: string;
+    timestamp: number;
+    type: 'buy' | 'sell';
+    tokenSymbol: string;
+    amount: number;
+    price: number;
+  }[];
+  lastUpdated?: number;
 }
 
 export async function fetchWallets(): Promise<Wallet[]> {
