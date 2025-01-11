@@ -12,9 +12,9 @@ class Transaction(BaseModel):
 
 class Wallet(BaseModel):
     id: Optional[str] = None
-    name: Optional[str] = None
+    name: str
     address: str
-    group: Optional[str] = None
+    group: str
     balance: Optional[float] = None
     currentPrice: Optional[float] = None
     transactions: Optional[List[Transaction]] = None
@@ -23,7 +23,7 @@ class Wallet(BaseModel):
     updated_at: Optional[datetime] = None
 
     class Config:
-        json_schema_extra = {
+        schema_extra = {
             "example": {
                 "name": "Main Wallet",
                 "address": "0x123...",
@@ -33,4 +33,4 @@ class Wallet(BaseModel):
                 "transactions": [],
                 "lastUpdated": 1677649200000
             }
-        }
+        } 

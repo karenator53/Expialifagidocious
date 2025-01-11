@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.env
+.venv
+venv/
+
+# Logs
+*.log
+
+# Keep Dockerfile
+!Dockerfile
