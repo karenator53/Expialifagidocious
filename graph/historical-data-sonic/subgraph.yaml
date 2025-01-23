@@ -1,4 +1,5 @@
 specVersion: 0.0.4
+description: Historical data indexer for Sonic DEX (Updated version)
 schema:
   file: ./schema.graphql
 dataSources:

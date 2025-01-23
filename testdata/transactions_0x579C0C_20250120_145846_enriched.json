@@ -1,0 +1,4814 @@
+{
+  "wallet_address": "0x579C0C05B15E9268e33F00a49aEC8b7CDb8c4F27",
+  "timestamp": "2025-01-20T14:58:46.635514",
+  "total_transactions": 2081,
+  "transactions_by_chain": {
+    "ethereum": [
+      {
+        "chain": "ethereum",
+        "transaction": {
+          "hash": "0x7f779038ddbfb2aa3b58de3edc61ef0ef3ac2fba5044c09b6ba1b44f8ee278ad",
+          "timestamp": "2022-10-01T01:38:35",
+          "block_number": 15650082,
+          "type": "buy",
+          "token": {
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "contract": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "decimals": 6
+          },
+          "amount": 190.0,
+          "from": "0x46340b20830761efd32832a74d7169b29feb9758",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 63197,
+          "gas_price": 14043260181
+        }
+      },
+      {
+        "chain": "ethereum",
+        "transaction": {
+          "hash": "0x6ff3ab94a383f10018a87b8358f46a837803547f102d708f4a90c4ca559ffde9",
+          "timestamp": "2022-10-02T02:48:47",
+          "block_number": 15657573,
+          "type": "buy",
+          "token": {
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "contract": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "decimals": 6
+          },
+          "amount": 56.385211,
+          "from": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 118722,
+          "gas_price": 4696925740
+        }
+      },
+      {
+        "chain": "ethereum",
+        "transaction": {
+          "hash": "0xb3797018ad9ac2204ef31afcd368f5437db121b8f0065dcffbcc256b2711bd10",
+          "timestamp": "2024-08-08T00:11:59",
+          "block_number": 20480201,
+          "type": "buy",
+          "token": {
+            "name": "USDC",
+            "symbol": "USDC",
+            "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "decimals": 6
+          },
+          "amount": 60.0,
+          "from": "0xebdce9a913d9400ee75ef31ce8bd34462d01a1c1",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 421921,
+          "gas_price": 3486931664
+        }
+      },
+      {
+        "chain": "ethereum",
+        "transaction": {
+          "hash": "0x64a72eb227cc1cf73e039246dc2143de9e03fc94f69174de898ab4e30cb0c088",
+          "timestamp": "2022-03-09T19:28:22",
+          "block_number": 14354475,
+          "type": "buy",
+          "token": {
+            "name": "USDC",
+            "symbol": "USDC",
+            "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "decimals": 6
+          },
+          "amount": 9.253731,
+          "from": "0x5f65f7b609678448494de4c87521cdf6cef1e932",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 72590,
+          "gas_price": 43760360007
+        }
+      },
+      {
+        "chain": "ethereum",
+        "transaction": {
+          "hash": "0xe3ddeb65b6f1097c189c38d0375a042793a85c53c3ee8e6c2277533900a1c778",
+          "timestamp": "2022-10-02T02:50:35",
+          "block_number": 15657582,
+          "type": "sell",
+          "token": {
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "contract": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "decimals": 6
+          },
+          "amount": 246.385211,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x2c4f3d14d472568612a7275fec6045ee819e3d71",
+          "gas_used": 58409,
+          "gas_price": 4706181591
+        }
+      },
+      {
+        "chain": "ethereum",
+        "transaction": {
+          "hash": "0x6eb95d359fe02990951f4dfb19222679f8756204adb329761663d0ffb777ed25",
+          "timestamp": "2024-08-08T00:13:35",
+          "block_number": 20480208,
+          "type": "sell",
+          "token": {
+            "name": "USDC",
+            "symbol": "USDC",
+            "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "decimals": 6
+          },
+          "amount": 60.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xebdce9a913d9400ee75ef31ce8bd34462d01a1c1",
+          "gas_used": 277709,
+          "gas_price": 2776255339
+        }
+      },
+      {
+        "chain": "ethereum",
+        "transaction": {
+          "hash": "0x791ca788e4f1436f1c61f0a6dc9750ea4b282ce2561713b1261ba07fd45a8110",
+          "timestamp": "2022-10-02T03:18:47",
+          "block_number": 15657722,
+          "type": "sell",
+          "token": {
+            "name": "USDC",
+            "symbol": "USDC",
+            "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "decimals": 6
+          },
+          "amount": 9.253731,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x3aa370aacf4cb08c7e1e7aa8e8ff9418d73c7e0f",
+          "gas_used": 128511,
+          "gas_price": 5248928073
+        }
+      }
+    ],
+    "base": [
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x0223887883687fedc27c7e33f39457a8dad9aca46fb71180e07aa24243568b5a",
+          "timestamp": "2024-11-22T03:31:47",
+          "block_number": 22728480,
+          "type": "buy",
+          "token": {
+            "name": "Salty Mango",
+            "symbol": "MANGO",
+            "contract": "0x13afd522018bdc5da9cce2f2cb50b14621aa99b7",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x5abccabd480ca7728aa91d5f2c4c602981a81791",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 11264694,
+          "gas_price": 1446096
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x3d1ae1ff23a9ac949aa39098b7551f402091d94cfaf5aceab5241067ebf434a1",
+          "timestamp": "2024-11-09T06:22:35",
+          "block_number": 22172004,
+          "type": "sell",
+          "token": {
+            "name": "Tarot",
+            "symbol": "TAROT",
+            "contract": "0xf544251d25f3d243a36b07e7e7962a678f952691",
+            "decimals": 18
+          },
+          "amount": 5380.361147456795,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xdb6f1920a889355780af7570773609bd8cb1f498",
+          "gas_used": 303085,
+          "gas_price": 11019133
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x58b7b5abfb4b4939d82685d834a07aad11cda7700003b4db90b2ebd0a0c42693",
+          "timestamp": "2024-11-06T02:11:59",
+          "block_number": 22034886,
+          "type": "buy",
+          "token": {
+            "name": "Aerodrome",
+            "symbol": "AERO",
+            "contract": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+            "decimals": 18
+          },
+          "amount": 0.010442714853563635,
+          "from": "0x042c37762d1d126bc61eac2f5ceb7a96318f5db9",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 457216,
+          "gas_price": 7850611
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x52aa3ce768c6d90e52e2f725823c6b718bcbec5073003a83bfa9f8dd4247207c",
+          "timestamp": "2024-11-09T06:13:11",
+          "block_number": 22171722,
+          "type": "buy",
+          "token": {
+            "name": "Tarot",
+            "symbol": "TAROT",
+            "contract": "0xf544251d25f3d243a36b07e7e7962a678f952691",
+            "decimals": 18
+          },
+          "amount": 5380.361147456795,
+          "from": "0xe46b5c98a03b31faaa16562f0a5c3191610e2e6d",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 139657,
+          "gas_price": 10392490
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x52aa3ce768c6d90e52e2f725823c6b718bcbec5073003a83bfa9f8dd4247207c",
+          "timestamp": "2024-11-09T06:13:11",
+          "block_number": 22171722,
+          "type": "sell",
+          "token": {
+            "name": "Tarot Borrowable",
+            "symbol": "bTAROT",
+            "contract": "0xe46b5c98a03b31faaa16562f0a5c3191610e2e6d",
+            "decimals": 18
+          },
+          "amount": 4206.452735546106,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xe46b5c98a03b31faaa16562f0a5c3191610e2e6d",
+          "gas_used": 139657,
+          "gas_price": 10392490
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0xf5ce47e6faff805b76608168c60cc29f8122169cd71f0492fc239d5bd28e7b11",
+          "timestamp": "2024-11-05T22:20:39",
+          "block_number": 22027946,
+          "type": "buy",
+          "token": {
+            "name": "Aerodrome",
+            "symbol": "AERO",
+            "contract": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+            "decimals": 18
+          },
+          "amount": 2.0294705167111227,
+          "from": "0x7810f8f3253ced11e8c56c6c8497f3134055d44c",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 180947,
+          "gas_price": 3656726
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0xf5ce47e6faff805b76608168c60cc29f8122169cd71f0492fc239d5bd28e7b11",
+          "timestamp": "2024-11-05T22:20:39",
+          "block_number": 22027946,
+          "type": "sell",
+          "token": {
+            "name": "Tarot",
+            "symbol": "TAROT",
+            "contract": "0xf544251d25f3d243a36b07e7e7962a678f952691",
+            "decimals": 18
+          },
+          "amount": 10.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x7810f8f3253ced11e8c56c6c8497f3134055d44c",
+          "gas_used": 180947,
+          "gas_price": 3656726
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x681ccc33f3aa59f432f296d2d0353c099a9a1751f11f56c2f74754682337cd5c",
+          "timestamp": "2025-01-09T18:53:47",
+          "block_number": 24829740,
+          "type": "sell",
+          "token": {
+            "name": "Odos Token",
+            "symbol": "ODOS",
+            "contract": "0xca73ed1815e5915489570014e024b7ebe65de679",
+            "decimals": 18
+          },
+          "amount": 8469.565581535062,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xbc3c5ca50b6a215edf00815965485527f26f5da8",
+          "gas_used": 357439,
+          "gas_price": 8930003
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x9b828edb8ecdc0f256e7049523856d08ed6a04f54f29ae0683ec1bc1d54cedf2",
+          "timestamp": "2024-12-20T16:20:15",
+          "block_number": 23961134,
+          "type": "buy",
+          "token": {
+            "name": "Odos Token",
+            "symbol": "ODOS",
+            "contract": "0xca73ed1815e5915489570014e024b7ebe65de679",
+            "decimals": 18
+          },
+          "amount": 4703.548069331358,
+          "from": "0x4c8f8055d88705f52c9994969dde61ab574895a3",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 275812,
+          "gas_price": 4094063
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0xb56ca93dabf83b6078af14aaa88039bc5a362ca213a73bf9f35a70713717cb6f",
+          "timestamp": "2024-11-05T22:23:01",
+          "block_number": 22028017,
+          "type": "buy",
+          "token": {
+            "name": "Tarot Borrowable",
+            "symbol": "bTAROT",
+            "contract": "0xe46b5c98a03b31faaa16562f0a5c3191610e2e6d",
+            "decimals": 18
+          },
+          "amount": 4206.452735546106,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 132735,
+          "gas_price": 3594966
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0xb56ca93dabf83b6078af14aaa88039bc5a362ca213a73bf9f35a70713717cb6f",
+          "timestamp": "2024-11-05T22:23:01",
+          "block_number": 22028017,
+          "type": "sell",
+          "token": {
+            "name": "Tarot",
+            "symbol": "TAROT",
+            "contract": "0xf544251d25f3d243a36b07e7e7962a678f952691",
+            "decimals": 18
+          },
+          "amount": 5365.572053575261,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xe46b5c98a03b31faaa16562f0a5c3191610e2e6d",
+          "gas_used": 132735,
+          "gas_price": 3594966
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x00dd112fdc7e1df9f85d45445fce28e048abb45b1e85938f1341d85549f8741a",
+          "timestamp": "2024-11-11T04:56:41",
+          "block_number": 22255827,
+          "type": "buy",
+          "token": {
+            "name": "Salty Grape",
+            "symbol": "GRAPE",
+            "contract": "0x65f8609bec7455a70248edba8884ba68ca07f2a7",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x916a73b855f1c19f2301abf51c6e3e67a6520c1e",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 12162297,
+          "gas_price": 1864861
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x07f4f9add85e1d8486600b418c11fcb28cac155c245b0f085a0f9b1d0e1b0a9b",
+          "timestamp": "2024-11-16T07:55:57",
+          "block_number": 22477205,
+          "type": "buy",
+          "token": {
+            "name": "Salty Cream",
+            "symbol": "CREAM",
+            "contract": "0x07c3233263063d0e9df5f18719bf59ea1465e0f5",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x78e7e81d73e28703ffb276e78ab143d44cd62ce7",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 12162297,
+          "gas_price": 7527645
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x79b7d2fd859a05ac9ff177fab378c52faa552f0ed9788976a8be4f63ac809710",
+          "timestamp": "2024-11-05T22:07:15",
+          "block_number": 22027544,
+          "type": "buy",
+          "token": {
+            "name": "Tarot",
+            "symbol": "TAROT",
+            "contract": "0xf544251d25f3d243a36b07e7e7962a678f952691",
+            "decimals": 18
+          },
+          "amount": 5375.572053575262,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 145066,
+          "gas_price": 4646424
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x0a2e21d02e270d947e2155bf1c4d73f218030a1f09ce56b2f125ace720a71734",
+          "timestamp": "2024-11-05T22:22:15",
+          "block_number": 22027994,
+          "type": "buy",
+          "token": {
+            "name": "Tarot Borrowable",
+            "symbol": "bTAROT",
+            "contract": "0x1d63c27367dd5a8c86b59934645df46d5486240f",
+            "decimals": 18
+          },
+          "amount": 1.3796885008090156,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 132430,
+          "gas_price": 3628067
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x0a2e21d02e270d947e2155bf1c4d73f218030a1f09ce56b2f125ace720a71734",
+          "timestamp": "2024-11-05T22:22:15",
+          "block_number": 22027994,
+          "type": "sell",
+          "token": {
+            "name": "Aerodrome",
+            "symbol": "AERO",
+            "contract": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+            "decimals": 18
+          },
+          "amount": 2.0294705167111227,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x1d63c27367dd5a8c86b59934645df46d5486240f",
+          "gas_used": 132430,
+          "gas_price": 3628067
+        }
+      },
+      {
+        "chain": "base",
+        "transaction": {
+          "hash": "0x5398fe65deccdd78703b845d4be777ad3470b9f8c1f77f06a7356955d605dd55",
+          "timestamp": "2025-01-04T03:05:59",
+          "block_number": 24585306,
+          "type": "buy",
+          "token": {
+            "name": "Odos Token",
+            "symbol": "ODOS",
+            "contract": "0xca73ed1815e5915489570014e024b7ebe65de679",
+            "decimals": 18
+          },
+          "amount": 3766.017512203704,
+          "from": "0x0dd9cdeff318eb2b9f3c1b7c85e6cc33ef8efa5d",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 29508,
+          "gas_price": 30642117
+        }
+      }
+    ],
+    "sonic": [
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf35965d6136c4db9c4465454c9b8695671ea4b9564fd54c34f0a6641f46fb6f8",
+          "timestamp": "2025-01-12T04:45:08",
+          "block_number": 3514368,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x21fc304e7255e58995f4dad147d92d8ee96d19a8a70778c6705faeb082e72721",
+          "timestamp": "2025-01-11T21:26:39",
+          "block_number": 3457029,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x287549122e99ff9c77bded053a20b452256638503ae49db6d819b70579b133a4",
+          "timestamp": "2025-01-06T04:06:01",
+          "block_number": 2662408,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1430000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x287549122e99ff9c77bded053a20b452256638503ae49db6d819b70579b133a4",
+          "timestamp": "2025-01-06T04:06:01",
+          "block_number": 2662408,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1430000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x287549122e99ff9c77bded053a20b452256638503ae49db6d819b70579b133a4",
+          "timestamp": "2025-01-06T04:06:01",
+          "block_number": 2662408,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1430000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x287549122e99ff9c77bded053a20b452256638503ae49db6d819b70579b133a4",
+          "timestamp": "2025-01-06T04:06:01",
+          "block_number": 2662408,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1430000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf973387e0dfe95ce0b4dc45c57263dc6a676d34bd8930d8a63e27b3665a3138d",
+          "timestamp": "2025-01-04T17:09:40",
+          "block_number": 2490376,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf973387e0dfe95ce0b4dc45c57263dc6a676d34bd8930d8a63e27b3665a3138d",
+          "timestamp": "2025-01-04T17:09:40",
+          "block_number": 2490376,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf973387e0dfe95ce0b4dc45c57263dc6a676d34bd8930d8a63e27b3665a3138d",
+          "timestamp": "2025-01-04T17:09:40",
+          "block_number": 2490376,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf973387e0dfe95ce0b4dc45c57263dc6a676d34bd8930d8a63e27b3665a3138d",
+          "timestamp": "2025-01-04T17:09:40",
+          "block_number": 2490376,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x078a1f5d6b3fb9f4f09f2351da1ad92c30797277460d87cf9a3609fca0033dab",
+          "timestamp": "2025-01-04T21:22:19",
+          "block_number": 2510859,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x078a1f5d6b3fb9f4f09f2351da1ad92c30797277460d87cf9a3609fca0033dab",
+          "timestamp": "2025-01-04T21:22:19",
+          "block_number": 2510859,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x078a1f5d6b3fb9f4f09f2351da1ad92c30797277460d87cf9a3609fca0033dab",
+          "timestamp": "2025-01-04T21:22:19",
+          "block_number": 2510859,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x078a1f5d6b3fb9f4f09f2351da1ad92c30797277460d87cf9a3609fca0033dab",
+          "timestamp": "2025-01-04T21:22:19",
+          "block_number": 2510859,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x971b6a8c7b923e3762ec7b01a5bdb1194cbb20c57f11300e122c828d08cd39f2",
+          "timestamp": "2025-01-10T08:20:32",
+          "block_number": 3221521,
+          "type": "buy",
+          "token": {
+            "name": "Beets Staked Sonic",
+            "symbol": "stS",
+            "contract": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+            "decimals": 18
+          },
+          "amount": 528.8501456324716,
+          "from": "0x396922ef30cf012973343f7174db850c7d265278",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 217890,
+          "gas_price": 5940000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x971b6a8c7b923e3762ec7b01a5bdb1194cbb20c57f11300e122c828d08cd39f2",
+          "timestamp": "2025-01-10T08:20:32",
+          "block_number": 3221521,
+          "type": "sell",
+          "token": {
+            "name": "Silo Finance Borrowable stS Deposit, SiloId: 3",
+            "symbol": "bstS-3",
+            "contract": "0x396922ef30cf012973343f7174db850c7d265278",
+            "decimals": 21
+          },
+          "amount": 136448.53256213805,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x0000000000000000000000000000000000000000",
+          "gas_used": 217890,
+          "gas_price": 5940000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x1c838ea8d5b6bb046c214c3da2b033b18b09a245ad6d64aad6ba19fae82e5255",
+          "timestamp": "2025-01-06T02:12:26",
+          "block_number": 2652177,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x1c838ea8d5b6bb046c214c3da2b033b18b09a245ad6d64aad6ba19fae82e5255",
+          "timestamp": "2025-01-06T02:12:26",
+          "block_number": 2652177,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x1c838ea8d5b6bb046c214c3da2b033b18b09a245ad6d64aad6ba19fae82e5255",
+          "timestamp": "2025-01-06T02:12:26",
+          "block_number": 2652177,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x1c838ea8d5b6bb046c214c3da2b033b18b09a245ad6d64aad6ba19fae82e5255",
+          "timestamp": "2025-01-06T02:12:26",
+          "block_number": 2652177,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xd0a241e00e39108d5f4d625d756733f10dd55b46ccae0c58630d3d899c8f6f07",
+          "timestamp": "2025-01-11T18:49:11",
+          "block_number": 3434515,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1512.401462995019,
+          "from": "0x86193d8058d9b80b9e0bf69de3279c7d7a9644ed",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "sell",
+          "token": {
+            "name": "GOGGLES",
+            "symbol": "GOGLZ",
+            "contract": "0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564",
+            "decimals": 18
+          },
+          "amount": 50.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba7bac71a8ee550d89b827fe6d67bc3dca07b104",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1522.3030014453118,
+          "from": "0x686feb631e957aae3dff21be5f00da7636e4601e",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "sell",
+          "token": {
+            "name": "GOGGLES",
+            "symbol": "GOGLZ",
+            "contract": "0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564",
+            "decimals": 18
+          },
+          "amount": 50.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba7bac71a8ee550d89b827fe6d67bc3dca07b104",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4535.044732365898,
+          "from": "0x9abf712d326da30f77ee14840f0180b571630a32",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "sell",
+          "token": {
+            "name": "GOGGLES",
+            "symbol": "GOGLZ",
+            "contract": "0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564",
+            "decimals": 18
+          },
+          "amount": 150.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba7bac71a8ee550d89b827fe6d67bc3dca07b104",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 129099.32761271148,
+          "from": "0x9abf712d326da30f77ee14840f0180b571630a32",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "sell",
+          "token": {
+            "name": "GOGGLES",
+            "symbol": "GOGLZ",
+            "contract": "0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564",
+            "decimals": 18
+          },
+          "amount": 4250.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba7bac71a8ee550d89b827fe6d67bc3dca07b104",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 15211.584123968816,
+          "from": "0x826702d8ce916001d1b595bfb845fe77ffb36b6d",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x522b13b685848163e801754b0253649baa525da033b4b8b7511831136f96b07e",
+          "timestamp": "2025-01-05T01:30:38",
+          "block_number": 2529299,
+          "type": "sell",
+          "token": {
+            "name": "GOGGLES",
+            "symbol": "GOGLZ",
+            "contract": "0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564",
+            "decimals": 18
+          },
+          "amount": 500.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba7bac71a8ee550d89b827fe6d67bc3dca07b104",
+          "gas_used": 818714,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xec12a8e08e6517f51737259405f45293735627cd2eebb14dc6e98ca242b56b01",
+          "timestamp": "2024-12-24T15:44:07",
+          "block_number": 1476629,
+          "type": "buy",
+          "token": {
+            "name": "SZERO",
+            "symbol": "SZERO",
+            "contract": "0x5f1b419a2e8deb47ea5291bb15d7eb7edff78f5e",
+            "decimals": 18
+          },
+          "amount": 102.477647,
+          "from": "0xe08a9b4cba6b21c06b6a101de666d64871d2bb63",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 55029,
+          "gas_price": 2500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x95a76faaab29d8954a90d066634bef147bd9c0dde24d6327c45ed8254b1a6dd3",
+          "timestamp": "2024-12-22T01:13:35",
+          "block_number": 1110034,
+          "type": "sell",
+          "token": {
+            "name": "PENIS TOKEN",
+            "symbol": "PENIS",
+            "contract": "0x230e36e8370b7574665443bbdccf0ce429632456",
+            "decimals": 18
+          },
+          "amount": 3570944.3649244998,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x2b5f704ab7061fb4dbfc5876b024f4bdb2f5e8b6",
+          "gas_used": 431993,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x14ac5b6d716e758780ce4f1a12ed48e3c331801c535492e02eef3de9b7e63b1b",
+          "timestamp": "2025-01-05T05:05:19",
+          "block_number": 2545691,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x14ac5b6d716e758780ce4f1a12ed48e3c331801c535492e02eef3de9b7e63b1b",
+          "timestamp": "2025-01-05T05:05:19",
+          "block_number": 2545691,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x14ac5b6d716e758780ce4f1a12ed48e3c331801c535492e02eef3de9b7e63b1b",
+          "timestamp": "2025-01-05T05:05:19",
+          "block_number": 2545691,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x14ac5b6d716e758780ce4f1a12ed48e3c331801c535492e02eef3de9b7e63b1b",
+          "timestamp": "2025-01-05T05:05:19",
+          "block_number": 2545691,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e7203016574db1e80649eb0791aec61837efa5f80db6a2306b756194c91aac6",
+          "timestamp": "2025-01-06T00:25:45",
+          "block_number": 2641948,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e7203016574db1e80649eb0791aec61837efa5f80db6a2306b756194c91aac6",
+          "timestamp": "2025-01-06T00:25:45",
+          "block_number": 2641948,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e7203016574db1e80649eb0791aec61837efa5f80db6a2306b756194c91aac6",
+          "timestamp": "2025-01-06T00:25:45",
+          "block_number": 2641948,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e7203016574db1e80649eb0791aec61837efa5f80db6a2306b756194c91aac6",
+          "timestamp": "2025-01-06T00:25:45",
+          "block_number": 2641948,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2372a1ce509154254e0ecf0db2b0649af3b292ea6b4d1b66344e9cf940cf8128",
+          "timestamp": "2025-01-05T17:53:45",
+          "block_number": 2609184,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2372a1ce509154254e0ecf0db2b0649af3b292ea6b4d1b66344e9cf940cf8128",
+          "timestamp": "2025-01-05T17:53:45",
+          "block_number": 2609184,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2372a1ce509154254e0ecf0db2b0649af3b292ea6b4d1b66344e9cf940cf8128",
+          "timestamp": "2025-01-05T17:53:45",
+          "block_number": 2609184,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2372a1ce509154254e0ecf0db2b0649af3b292ea6b4d1b66344e9cf940cf8128",
+          "timestamp": "2025-01-05T17:53:45",
+          "block_number": 2609184,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x7a0c46fadf6d62d584a2dea7e9c6e5a4126c1472db65f8f5840cd41bfdd628d7",
+          "timestamp": "2024-12-20T23:27:15",
+          "block_number": 946208,
+          "type": "buy",
+          "token": {
+            "name": "Derp Meme Factory",
+            "symbol": "DMF",
+            "contract": "0x8bcbd426ad9fd95d75f2daed2a10021f462d0461",
+            "decimals": 18
+          },
+          "amount": 166.66666666666666,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 8056728,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x7a0c46fadf6d62d584a2dea7e9c6e5a4126c1472db65f8f5840cd41bfdd628d7",
+          "timestamp": "2024-12-20T23:27:15",
+          "block_number": 946208,
+          "type": "buy",
+          "token": {
+            "name": "Derp Meme Factory",
+            "symbol": "DMF",
+            "contract": "0x8bcbd426ad9fd95d75f2daed2a10021f462d0461",
+            "decimals": 18
+          },
+          "amount": 166.66666666666666,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 8056728,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb916ce533e878c5edac65d2bd3c643cacc7b7160f423a2dfa3333ccb85bca1c7",
+          "timestamp": "2025-01-06T04:26:34",
+          "block_number": 2664485,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb916ce533e878c5edac65d2bd3c643cacc7b7160f423a2dfa3333ccb85bca1c7",
+          "timestamp": "2025-01-06T04:26:34",
+          "block_number": 2664485,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb916ce533e878c5edac65d2bd3c643cacc7b7160f423a2dfa3333ccb85bca1c7",
+          "timestamp": "2025-01-06T04:26:34",
+          "block_number": 2664485,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb916ce533e878c5edac65d2bd3c643cacc7b7160f423a2dfa3333ccb85bca1c7",
+          "timestamp": "2025-01-06T04:26:34",
+          "block_number": 2664485,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x00c0632011b3d47afac69a121450f1d705c8c7cbf0d7f0d07c9f234950b79609",
+          "timestamp": "2024-12-21T00:06:33",
+          "block_number": 952359,
+          "type": "buy",
+          "token": {
+            "name": "Derp Laucnher",
+            "symbol": "DERL",
+            "contract": "0x394b0d004744f882eb2caf7904c4e884b5def4e5",
+            "decimals": 18
+          },
+          "amount": 500.0,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 6980004,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0a0eced907361443fda84a7d3357a07cadf391966152fef37ec97b5958caa4e2",
+          "timestamp": "2025-01-12T16:35:22",
+          "block_number": 3608616,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xea8c442a448b94f86ed947ebb63596182d93a8771ad4e9fa95d940e3aa5c42d6",
+          "timestamp": "2024-12-26T00:42:43",
+          "block_number": 1609768,
+          "type": "buy",
+          "token": {
+            "name": "Bridged USDC (Sonic Labs)",
+            "symbol": "USDC.e",
+            "contract": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "decimals": 6
+          },
+          "amount": 62.119846,
+          "from": "0xdc85f86d5e3189e0d4a776e6ae3b3911ec7b0133",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 306977,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe0765a1258cc23d2e89f8ac448b2f944d707a5df41bd2558cedeb76bca828bc7",
+          "timestamp": "2024-12-21T00:06:34",
+          "block_number": 952362,
+          "type": "buy",
+          "token": {
+            "name": "Derp Laucnher",
+            "symbol": "DERL",
+            "contract": "0x394b0d004744f882eb2caf7904c4e884b5def4e5",
+            "decimals": 18
+          },
+          "amount": 500.0,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 7310286,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe0765a1258cc23d2e89f8ac448b2f944d707a5df41bd2558cedeb76bca828bc7",
+          "timestamp": "2024-12-21T00:06:34",
+          "block_number": 952362,
+          "type": "buy",
+          "token": {
+            "name": "Derp Laucnher",
+            "symbol": "DERL",
+            "contract": "0x394b0d004744f882eb2caf7904c4e884b5def4e5",
+            "decimals": 18
+          },
+          "amount": 500.0,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 7310286,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa26aed35e463a160b9e388e3a96932f5410bc1b4552c21ae2901f6e0e8b482e3",
+          "timestamp": "2025-01-06T01:53:54",
+          "block_number": 2650157,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1150000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa26aed35e463a160b9e388e3a96932f5410bc1b4552c21ae2901f6e0e8b482e3",
+          "timestamp": "2025-01-06T01:53:54",
+          "block_number": 2650157,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1150000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa26aed35e463a160b9e388e3a96932f5410bc1b4552c21ae2901f6e0e8b482e3",
+          "timestamp": "2025-01-06T01:53:54",
+          "block_number": 2650157,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1150000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa26aed35e463a160b9e388e3a96932f5410bc1b4552c21ae2901f6e0e8b482e3",
+          "timestamp": "2025-01-06T01:53:54",
+          "block_number": 2650157,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1150000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x23f0e962056dbda75d06e0fcc4ccb2165702ae1466cb1521047194ee2690e8c9",
+          "timestamp": "2025-01-12T06:02:38",
+          "block_number": 3524654,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x687658e69061dd26148cc5a3c6e46f680c6fe0017ad4a7f4521b1e4905f4449f",
+          "timestamp": "2025-01-12T05:12:53",
+          "block_number": 3518514,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x45de4736a6eb486d521bb42daf261dad8d63b96b3c06204e6f83828e1a526f9f",
+          "timestamp": "2025-01-04T17:58:50",
+          "block_number": 2494517,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x45de4736a6eb486d521bb42daf261dad8d63b96b3c06204e6f83828e1a526f9f",
+          "timestamp": "2025-01-04T17:58:50",
+          "block_number": 2494517,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x45de4736a6eb486d521bb42daf261dad8d63b96b3c06204e6f83828e1a526f9f",
+          "timestamp": "2025-01-04T17:58:50",
+          "block_number": 2494517,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x45de4736a6eb486d521bb42daf261dad8d63b96b3c06204e6f83828e1a526f9f",
+          "timestamp": "2025-01-04T17:58:50",
+          "block_number": 2494517,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x35dfefb5cc1ec38fc65949ec3dedca7497d3a88619a3c4b8dc012a7d1f0d4d78",
+          "timestamp": "2024-12-26T18:15:05",
+          "block_number": 1671223,
+          "type": "sell",
+          "token": {
+            "name": "Beets Staked Sonic",
+            "symbol": "stS",
+            "contract": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+            "decimals": 18
+          },
+          "amount": 0.19500116491814115,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 315548,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x35dfefb5cc1ec38fc65949ec3dedca7497d3a88619a3c4b8dc012a7d1f0d4d78",
+          "timestamp": "2024-12-26T18:15:05",
+          "block_number": 1671223,
+          "type": "sell",
+          "token": {
+            "name": "Sonic USD",
+            "symbol": "scUSD",
+            "contract": "0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae",
+            "decimals": 6
+          },
+          "amount": 0.000357,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 315548,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x35dfefb5cc1ec38fc65949ec3dedca7497d3a88619a3c4b8dc012a7d1f0d4d78",
+          "timestamp": "2024-12-26T18:15:05",
+          "block_number": 1671223,
+          "type": "sell",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 10000.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 315548,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x35dfefb5cc1ec38fc65949ec3dedca7497d3a88619a3c4b8dc012a7d1f0d4d78",
+          "timestamp": "2024-12-26T18:15:05",
+          "block_number": 1671223,
+          "type": "sell",
+          "token": {
+            "name": "Sonic ETH",
+            "symbol": "scETH",
+            "contract": "0x3bce5cb273f0f148010bbea2470e7b5df84c7812",
+            "decimals": 18
+          },
+          "amount": 0.000134861442911636,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 315548,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x35dfefb5cc1ec38fc65949ec3dedca7497d3a88619a3c4b8dc012a7d1f0d4d78",
+          "timestamp": "2024-12-26T18:15:05",
+          "block_number": 1671223,
+          "type": "buy",
+          "token": {
+            "name": "Ruggie\u2019s Cheese Rings",
+            "symbol": "70RUGGIE-10stS-10scUSD-10scETH",
+            "contract": "0x481cbbe28cc0f5226cdf0192fb60d8b28219a95b",
+            "decimals": 18
+          },
+          "amount": 703.1541207982856,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 315548,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xcb9aacbc2e7d15070f5e77126b382fadf496390eee660821b0f416d39c2766e0",
+          "timestamp": "2024-12-27T02:58:05",
+          "block_number": 1708090,
+          "type": "sell",
+          "token": {
+            "name": "PENIS TOKEN",
+            "symbol": "PENIS",
+            "contract": "0x230e36e8370b7574665443bbdccf0ce429632456",
+            "decimals": 18
+          },
+          "amount": 3260543.207843311,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x32181a973d863e2197e7e78b514c66fcc4ea01eb",
+          "gas_used": 132453,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xcaf3ebba651ac819f3088a0b312361c8f55148dd25061994377f1d432e1e812b",
+          "timestamp": "2024-12-21T00:06:39",
+          "block_number": 952378,
+          "type": "buy",
+          "token": {
+            "name": "Derp Laucnher",
+            "symbol": "DERL",
+            "contract": "0x394b0d004744f882eb2caf7904c4e884b5def4e5",
+            "decimals": 18
+          },
+          "amount": 500.0,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 8089218,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xcaf3ebba651ac819f3088a0b312361c8f55148dd25061994377f1d432e1e812b",
+          "timestamp": "2024-12-21T00:06:39",
+          "block_number": 952378,
+          "type": "buy",
+          "token": {
+            "name": "Derp Laucnher",
+            "symbol": "DERL",
+            "contract": "0x394b0d004744f882eb2caf7904c4e884b5def4e5",
+            "decimals": 18
+          },
+          "amount": 500.0,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 8089218,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x17876d72c4b68ef2c5843fdeb325c6b37fdc75607ea9ee3bd8cd202d6ca9618c",
+          "timestamp": "2025-01-11T22:37:30",
+          "block_number": 3467326,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa19a6fbb53e94f67781fb578712142cbc8eb9934c3aad5a5197e6293ee617ea4",
+          "timestamp": "2025-01-01T05:24:46",
+          "block_number": 2134080,
+          "type": "sell",
+          "token": {
+            "name": "Beets Staked Sonic",
+            "symbol": "stS",
+            "contract": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+            "decimals": 18
+          },
+          "amount": 2647.907773511658,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 216421,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa19a6fbb53e94f67781fb578712142cbc8eb9934c3aad5a5197e6293ee617ea4",
+          "timestamp": "2025-01-01T05:24:46",
+          "block_number": 2134080,
+          "type": "sell",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 86855099.45319957,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 216421,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa19a6fbb53e94f67781fb578712142cbc8eb9934c3aad5a5197e6293ee617ea4",
+          "timestamp": "2025-01-01T05:24:46",
+          "block_number": 2134080,
+          "type": "buy",
+          "token": {
+            "name": "Ruggie\u2019s Pizzeria",
+            "symbol": "BPT-RUGGIE-stS",
+            "contract": "0x0054b73c676222ff5285a2ef92e3aa2b846f1438",
+            "decimals": 18
+          },
+          "amount": 21679270.61958748,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 216421,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xed4be7fa3b968c1a3dde8a91ddb701edd5f395b837a7059d3593c80bd89aab5b",
+          "timestamp": "2024-12-21T00:06:41",
+          "block_number": 952384,
+          "type": "buy",
+          "token": {
+            "name": "Derp Laucnher",
+            "symbol": "DERL",
+            "contract": "0x394b0d004744f882eb2caf7904c4e884b5def4e5",
+            "decimals": 18
+          },
+          "amount": 500.0,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 7279518,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2d55ecbeefca9f8d838778c328a49da3fc99770707891de5f52ce8e45b1ba35f",
+          "timestamp": "2025-01-06T03:43:42",
+          "block_number": 2660422,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2d55ecbeefca9f8d838778c328a49da3fc99770707891de5f52ce8e45b1ba35f",
+          "timestamp": "2025-01-06T03:43:42",
+          "block_number": 2660422,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2d55ecbeefca9f8d838778c328a49da3fc99770707891de5f52ce8e45b1ba35f",
+          "timestamp": "2025-01-06T03:43:42",
+          "block_number": 2660422,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2d55ecbeefca9f8d838778c328a49da3fc99770707891de5f52ce8e45b1ba35f",
+          "timestamp": "2025-01-06T03:43:42",
+          "block_number": 2660422,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x168f3462b800ef2908474d1d0ccd9247c6e6cc24924f50cea9aa9a8dba58124f",
+          "timestamp": "2024-12-20T23:27:32",
+          "block_number": 946246,
+          "type": "buy",
+          "token": {
+            "name": "Derp Meme Factory",
+            "symbol": "DMF",
+            "contract": "0x8bcbd426ad9fd95d75f2daed2a10021f462d0461",
+            "decimals": 18
+          },
+          "amount": 166.66666666666666,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 7264128,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb2890a02249394e84843fc74f38388b51fd79a4b35c95487b1ce9c2d1fa6781a",
+          "timestamp": "2025-01-11T20:55:29",
+          "block_number": 3453000,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x1b7e3f8486fedc3e559163decb1123f563242affbebb227be8007573fc80fad8",
+          "timestamp": "2025-01-12T01:14:54",
+          "block_number": 3487818,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x20a7f0ecf71e2a11dd7329062d083ffdbb25e6b9d7fc806952cd4c5151881349",
+          "timestamp": "2024-12-26T02:08:31",
+          "block_number": 1613907,
+          "type": "sell",
+          "token": {
+            "name": "Beets Staked Sonic",
+            "symbol": "stS",
+            "contract": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+            "decimals": 18
+          },
+          "amount": 18.746959208803393,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 320441,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x20a7f0ecf71e2a11dd7329062d083ffdbb25e6b9d7fc806952cd4c5151881349",
+          "timestamp": "2024-12-26T02:08:31",
+          "block_number": 1613907,
+          "type": "sell",
+          "token": {
+            "name": "Sonic USD",
+            "symbol": "scUSD",
+            "contract": "0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae",
+            "decimals": 6
+          },
+          "amount": 18.025923,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 320441,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x20a7f0ecf71e2a11dd7329062d083ffdbb25e6b9d7fc806952cd4c5151881349",
+          "timestamp": "2024-12-26T02:08:31",
+          "block_number": 1613907,
+          "type": "sell",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 1033786.6448316103,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 320441,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x20a7f0ecf71e2a11dd7329062d083ffdbb25e6b9d7fc806952cd4c5151881349",
+          "timestamp": "2024-12-26T02:08:31",
+          "block_number": 1613907,
+          "type": "sell",
+          "token": {
+            "name": "Sonic ETH",
+            "symbol": "scETH",
+            "contract": "0x3bce5cb273f0f148010bbea2470e7b5df84c7812",
+            "decimals": 18
+          },
+          "amount": 0.005624087762641019,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 320441,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x20a7f0ecf71e2a11dd7329062d083ffdbb25e6b9d7fc806952cd4c5151881349",
+          "timestamp": "2024-12-26T02:08:31",
+          "block_number": 1613907,
+          "type": "buy",
+          "token": {
+            "name": "Ruggie\u2019s Cheese Rings",
+            "symbol": "70RUGGIE-10stS-10scUSD-10scETH",
+            "contract": "0x481cbbe28cc0f5226cdf0192fb60d8b28219a95b",
+            "decimals": 18
+          },
+          "amount": 69191.01082470431,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 320441,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x060b66d1ddfd7e1a424c93b9b1408af8aa3eae0d59df9b5d48b7fe0d14fe590d",
+          "timestamp": "2024-12-24T02:34:49",
+          "block_number": 1411156,
+          "type": "buy",
+          "token": {
+            "name": "Moon Bay",
+            "symbol": "MOON",
+            "contract": "0x486b6fa0419b33a0c7a6e4698c231d7e2f2d5299",
+            "decimals": 18
+          },
+          "amount": 0.1,
+          "from": "0x458b14915e651243acf89c05859a22d5cff976a6",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 6443779,
+          "gas_price": 1320000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x241f8a8b9697781567ce78582e0608702b08a2fd73ef86a45c58e6f09fe65bce",
+          "timestamp": "2025-01-04T16:28:05",
+          "block_number": 2486362,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x241f8a8b9697781567ce78582e0608702b08a2fd73ef86a45c58e6f09fe65bce",
+          "timestamp": "2025-01-04T16:28:05",
+          "block_number": 2486362,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x241f8a8b9697781567ce78582e0608702b08a2fd73ef86a45c58e6f09fe65bce",
+          "timestamp": "2025-01-04T16:28:05",
+          "block_number": 2486362,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x241f8a8b9697781567ce78582e0608702b08a2fd73ef86a45c58e6f09fe65bce",
+          "timestamp": "2025-01-04T16:28:05",
+          "block_number": 2486362,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x5591eab6f7ece148069063f0543f124507ca74bcb852df7453ce2214c155f634",
+          "timestamp": "2024-12-24T09:17:30",
+          "block_number": 1443933,
+          "type": "buy",
+          "token": {
+            "name": "Santa Claus is comin",
+            "symbol": "HOHOHO",
+            "contract": "0x11b900212be3f16e05c52ce4ff2d6fb39d0c6899",
+            "decimals": 18
+          },
+          "amount": 208.37326900000002,
+          "from": "0x29de51b3fcdbe7550efb20c0b151e38c5a9307d4",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 55029,
+          "gas_price": 2500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc0cac072ec8bfcda97c94407d4ec86a208db2054d32d522c2410f95aeea7b88d",
+          "timestamp": "2025-01-05T18:14:00",
+          "block_number": 2611297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc0cac072ec8bfcda97c94407d4ec86a208db2054d32d522c2410f95aeea7b88d",
+          "timestamp": "2025-01-05T18:14:00",
+          "block_number": 2611297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc0cac072ec8bfcda97c94407d4ec86a208db2054d32d522c2410f95aeea7b88d",
+          "timestamp": "2025-01-05T18:14:00",
+          "block_number": 2611297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc0cac072ec8bfcda97c94407d4ec86a208db2054d32d522c2410f95aeea7b88d",
+          "timestamp": "2025-01-05T18:14:00",
+          "block_number": 2611297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xdca66ba56c5bcfe82a8ffb19453be2cad0096d3bd70dbf2c5de0dffd16e704fe",
+          "timestamp": "2025-01-11T19:57:49",
+          "block_number": 3444834,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 6910000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc6e6c98f91aae16337b62a3ad8cec1343605eff9a95c976ba4deb462cfc12b63",
+          "timestamp": "2025-01-06T02:57:18",
+          "block_number": 2656354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc6e6c98f91aae16337b62a3ad8cec1343605eff9a95c976ba4deb462cfc12b63",
+          "timestamp": "2025-01-06T02:57:18",
+          "block_number": 2656354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc6e6c98f91aae16337b62a3ad8cec1343605eff9a95c976ba4deb462cfc12b63",
+          "timestamp": "2025-01-06T02:57:18",
+          "block_number": 2656354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc6e6c98f91aae16337b62a3ad8cec1343605eff9a95c976ba4deb462cfc12b63",
+          "timestamp": "2025-01-06T02:57:18",
+          "block_number": 2656354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0854fa1429d99dd6cd2b1bdb4144bfdc0321729bbdc78f927e0ebd1ed9173dcb",
+          "timestamp": "2025-01-04T21:23:29",
+          "block_number": 2510945,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0854fa1429d99dd6cd2b1bdb4144bfdc0321729bbdc78f927e0ebd1ed9173dcb",
+          "timestamp": "2025-01-04T21:23:29",
+          "block_number": 2510945,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0854fa1429d99dd6cd2b1bdb4144bfdc0321729bbdc78f927e0ebd1ed9173dcb",
+          "timestamp": "2025-01-04T21:23:29",
+          "block_number": 2510945,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0854fa1429d99dd6cd2b1bdb4144bfdc0321729bbdc78f927e0ebd1ed9173dcb",
+          "timestamp": "2025-01-04T21:23:29",
+          "block_number": 2510945,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe192804cde55ab72eae4cec38dfde8749ddc032ed134af00aeb9ef1dce375dfe",
+          "timestamp": "2024-12-29T12:00:58",
+          "block_number": 1898593,
+          "type": "buy",
+          "token": {
+            "name": "Deep Brown",
+            "symbol": "BROWN",
+            "contract": "0x53a68d1554cb46c21ccf5483f4f2b5fa5417a7f2",
+            "decimals": 18
+          },
+          "amount": 92.36649,
+          "from": "0x29de51b3fcdbe7550efb20c0b151e38c5a9307d4",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 55007,
+          "gas_price": 2500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf7444d4f7f0c182e00e08adbf7b00c45959f20b09a76fd28d7566913022d87c6",
+          "timestamp": "2024-12-23T10:53:25",
+          "block_number": 1331301,
+          "type": "buy",
+          "token": {
+            "name": "MERRY",
+            "symbol": "MERRY",
+            "contract": "0x435a1806bd08b04ff75a35060076ec879c99ae0f",
+            "decimals": 18
+          },
+          "amount": 214.059958,
+          "from": "0x8f1fe4214b9a3fc1e489ea6186e0ce6faf61f0ed",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 55029,
+          "gas_price": 2500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xd6bc2a06ce19646efa3b3763b9782f2f3ba832e3f61d0074ff9917d83ac8a760",
+          "timestamp": "2024-12-27T02:58:36",
+          "block_number": 1708136,
+          "type": "buy",
+          "token": {
+            "name": "GOGGLES",
+            "symbol": "GOGLZ",
+            "contract": "0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564",
+            "decimals": 18
+          },
+          "amount": 1944.5127280818392,
+          "from": "0x832e2bb9579f6ff038d3e704fa1bb5b6b18a6521",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 212662,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x9eb7f4a6c5549aa4334931b5d0a37ceb94b7a66d6bdbd36baf4bfbfd29f6408e",
+          "timestamp": "2025-01-06T02:33:12",
+          "block_number": 2654313,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x9eb7f4a6c5549aa4334931b5d0a37ceb94b7a66d6bdbd36baf4bfbfd29f6408e",
+          "timestamp": "2025-01-06T02:33:12",
+          "block_number": 2654313,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x9eb7f4a6c5549aa4334931b5d0a37ceb94b7a66d6bdbd36baf4bfbfd29f6408e",
+          "timestamp": "2025-01-06T02:33:12",
+          "block_number": 2654313,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x9eb7f4a6c5549aa4334931b5d0a37ceb94b7a66d6bdbd36baf4bfbfd29f6408e",
+          "timestamp": "2025-01-06T02:33:12",
+          "block_number": 2654313,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x81dac01eb36827a587c21c69c64461a73f03ccd79c12c9cf807603f2304e529d",
+          "timestamp": "2024-12-20T15:18:52",
+          "block_number": 895081,
+          "type": "buy",
+          "token": {
+            "name": "Beets Staked Sonic",
+            "symbol": "stS",
+            "contract": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+            "decimals": 18
+          },
+          "amount": 1.6429263963429896,
+          "from": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 107420,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x81dac01eb36827a587c21c69c64461a73f03ccd79c12c9cf807603f2304e529d",
+          "timestamp": "2024-12-20T15:18:52",
+          "block_number": 895081,
+          "type": "sell",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 10000.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xba12222222228d8ba445958a75a0704d566bf2c8",
+          "gas_used": 107420,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3dcc16a01c21e10f9f5f6e6bada9016d7c725b81376541bff77f9a83914da4fa",
+          "timestamp": "2025-01-19T16:30:39",
+          "block_number": 4561007,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1882686.4690689442,
+          "from": "0xac041df48df9791b0654f1dbbf2cc8450c5f2e9d",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 2168239,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3dcc16a01c21e10f9f5f6e6bada9016d7c725b81376541bff77f9a83914da4fa",
+          "timestamp": "2025-01-19T16:30:39",
+          "block_number": 4561007,
+          "type": "sell",
+          "token": {
+            "name": "Bridged USDC (Sonic Labs)",
+            "symbol": "USDC.e",
+            "contract": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "decimals": 6
+          },
+          "amount": 5000.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x9b99e9c620b2e2f09e0b9fced8f679eecf2653fe",
+          "gas_used": 2168239,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x4544cf07e309baa6ea80061083b990648f576776e8e288a6989fcfccffcd11f7",
+          "timestamp": "2025-01-05T15:18:06",
+          "block_number": 2596976,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x4544cf07e309baa6ea80061083b990648f576776e8e288a6989fcfccffcd11f7",
+          "timestamp": "2025-01-05T15:18:06",
+          "block_number": 2596976,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x4544cf07e309baa6ea80061083b990648f576776e8e288a6989fcfccffcd11f7",
+          "timestamp": "2025-01-05T15:18:06",
+          "block_number": 2596976,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x4544cf07e309baa6ea80061083b990648f576776e8e288a6989fcfccffcd11f7",
+          "timestamp": "2025-01-05T15:18:06",
+          "block_number": 2596976,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x64049dc0552486d8f0f424cfae06eb1aef84a699494bf91a466a8aa9a7f2557d",
+          "timestamp": "2024-12-29T06:47:24",
+          "block_number": 1882223,
+          "type": "buy",
+          "token": {
+            "name": "PANTHERSPEED",
+            "symbol": "PANTHERSPEED",
+            "contract": "0xd7e6b2789daaffd1d0d4d4ffae3f10b6f82ed315",
+            "decimals": 18
+          },
+          "amount": 2418.7465199999997,
+          "from": "0x8f1fe4214b9a3fc1e489ea6186e0ce6faf61f0ed",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 55029,
+          "gas_price": 2000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x41f0234a80e131fa814b57e301ed73bc647a6719b0f6c99cd77baf0e739d4366",
+          "timestamp": "2025-01-19T20:21:54",
+          "block_number": 4585586,
+          "type": "buy",
+          "token": {
+            "name": "Bridged USDC (Sonic Labs)",
+            "symbol": "USDC.e",
+            "contract": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "decimals": 6
+          },
+          "amount": 1500.0,
+          "from": "0x4e216c15697c1392fe59e1014b009505e05810df",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 322924,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x41f0234a80e131fa814b57e301ed73bc647a6719b0f6c99cd77baf0e739d4366",
+          "timestamp": "2025-01-19T20:21:54",
+          "block_number": 4585586,
+          "type": "buy",
+          "token": {
+            "name": "Silo Finance USDC.e Debt, SiloId: 8",
+            "symbol": "dUSDC.e-8",
+            "contract": "0xb1d70d54ec3caafece8812111681d93a3c524875",
+            "decimals": 6
+          },
+          "amount": 1499.784166,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 322924,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xbcc3fc3638be6944e686cf0638976a883f371242492624dd741331a9d0a293f6",
+          "timestamp": "2024-12-26T00:44:01",
+          "block_number": 1609845,
+          "type": "buy",
+          "token": {
+            "name": "Sonic USD",
+            "symbol": "scUSD",
+            "contract": "0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae",
+            "decimals": 6
+          },
+          "amount": 62.119846,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 125217,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xbcc3fc3638be6944e686cf0638976a883f371242492624dd741331a9d0a293f6",
+          "timestamp": "2024-12-26T00:44:01",
+          "block_number": 1609845,
+          "type": "sell",
+          "token": {
+            "name": "Bridged USDC (Sonic Labs)",
+            "symbol": "USDC.e",
+            "contract": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "decimals": 6
+          },
+          "amount": 62.119846,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae",
+          "gas_used": 125217,
+          "gas_price": 1120000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x4040eedb4f9bfddf934ffafccf47c20f91036531a2aff552e3ad3fd496e0a287",
+          "timestamp": "2025-01-12T02:23:29",
+          "block_number": 3496056,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5510000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x639569042f180bff79a33bf4cfe93213b9c4de943e2dd0ec83ace921fd48c417",
+          "timestamp": "2025-01-10T08:21:33",
+          "block_number": 3221624,
+          "type": "buy",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 5713953.492975493,
+          "from": "0xac041df48df9791b0654f1dbbf2cc8450c5f2e9d",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 637083,
+          "gas_price": 5780000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x639569042f180bff79a33bf4cfe93213b9c4de943e2dd0ec83ace921fd48c417",
+          "timestamp": "2025-01-10T08:21:33",
+          "block_number": 3221624,
+          "type": "sell",
+          "token": {
+            "name": "Beets Staked Sonic",
+            "symbol": "stS",
+            "contract": "0xe5da20f15420ad15de0fa650600afc998bbe3955",
+            "decimals": 18
+          },
+          "amount": 528.8501456324716,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x9b99e9c620b2e2f09e0b9fced8f679eecf2653fe",
+          "gas_used": 637083,
+          "gas_price": 5780000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe53acad936839911dc37034288b05c34a962af97a655be738379f01461a68715",
+          "timestamp": "2025-01-05T19:03:41",
+          "block_number": 2615418,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe53acad936839911dc37034288b05c34a962af97a655be738379f01461a68715",
+          "timestamp": "2025-01-05T19:03:41",
+          "block_number": 2615418,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe53acad936839911dc37034288b05c34a962af97a655be738379f01461a68715",
+          "timestamp": "2025-01-05T19:03:41",
+          "block_number": 2615418,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe53acad936839911dc37034288b05c34a962af97a655be738379f01461a68715",
+          "timestamp": "2025-01-05T19:03:41",
+          "block_number": 2615418,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x4ede7001571c21bbd62d287dd2da6666223c787cc23f1c03c53859173f63c3f4",
+          "timestamp": "2025-01-10T18:16:03",
+          "block_number": 3287170,
+          "type": "buy",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 52946.627202902135,
+          "from": "0xac041df48df9791b0654f1dbbf2cc8450c5f2e9d",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 296123,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb92ce9436184c5c28a716f703a90685f081aeb513aec5a7d7826cdbe86598778",
+          "timestamp": "2025-01-05T22:25:07",
+          "block_number": 2631810,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb92ce9436184c5c28a716f703a90685f081aeb513aec5a7d7826cdbe86598778",
+          "timestamp": "2025-01-05T22:25:07",
+          "block_number": 2631810,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb92ce9436184c5c28a716f703a90685f081aeb513aec5a7d7826cdbe86598778",
+          "timestamp": "2025-01-05T22:25:07",
+          "block_number": 2631810,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xb92ce9436184c5c28a716f703a90685f081aeb513aec5a7d7826cdbe86598778",
+          "timestamp": "2025-01-05T22:25:07",
+          "block_number": 2631810,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3efff22243151ef1ed569bb266b5315f47aa44423d19763c7ae1fafedba71488",
+          "timestamp": "2025-01-16T06:40:09",
+          "block_number": 4110471,
+          "type": "sell",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 199999.99999999997,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x9b99e9c620b2e2f09e0b9fced8f679eecf2653fe",
+          "gas_used": 263952,
+          "gas_price": 33000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x155c17d3caf423a6d706ab87fcf6103dbb146ac59ee393d3e855d3bdcc9a603f",
+          "timestamp": "2025-01-18T02:40:53",
+          "block_number": 4335753,
+          "type": "sell",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 1000000.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x1fbb3041b086d5aeb4905a6cf087f57e6fa87cbf",
+          "gas_used": 249036,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x8119468a35ad9a856b300fb0d13995050fe1f73f2e377d883a4ffac35c91650e",
+          "timestamp": "2025-01-05T16:59:58",
+          "block_number": 2605201,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x8119468a35ad9a856b300fb0d13995050fe1f73f2e377d883a4ffac35c91650e",
+          "timestamp": "2025-01-05T16:59:58",
+          "block_number": 2605201,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x8119468a35ad9a856b300fb0d13995050fe1f73f2e377d883a4ffac35c91650e",
+          "timestamp": "2025-01-05T16:59:58",
+          "block_number": 2605201,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x8119468a35ad9a856b300fb0d13995050fe1f73f2e377d883a4ffac35c91650e",
+          "timestamp": "2025-01-05T16:59:58",
+          "block_number": 2605201,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x73a361925214172c7c85f077e40df7707c820b73f3cb1ad8dd13a0d61a073ffc",
+          "timestamp": "2025-01-19T20:22:17",
+          "block_number": 4585619,
+          "type": "sell",
+          "token": {
+            "name": "Silo Finance USDC.e Debt, SiloId: 8",
+            "symbol": "dUSDC.e-8",
+            "contract": "0xb1d70d54ec3caafece8812111681d93a3c524875",
+            "decimals": 6
+          },
+          "amount": 1499.784138,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x0000000000000000000000000000000000000000",
+          "gas_used": 179139,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x73a361925214172c7c85f077e40df7707c820b73f3cb1ad8dd13a0d61a073ffc",
+          "timestamp": "2025-01-19T20:22:17",
+          "block_number": 4585619,
+          "type": "sell",
+          "token": {
+            "name": "Bridged USDC (Sonic Labs)",
+            "symbol": "USDC.e",
+            "contract": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "decimals": 6
+          },
+          "amount": 1500.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x22aacdec57b13911de9f188cf69633cc537bdb76",
+          "gas_used": 179139,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x03c860a743cb21d8f69e0657b9261db69d984c615219659f70bb31b9570343a0",
+          "timestamp": "2025-01-14T15:38:28",
+          "block_number": 3887252,
+          "type": "sell",
+          "token": {
+            "name": "Sonic Faggoat",
+            "symbol": "sFGGT",
+            "contract": "0x18eb4362ab62e8800a930ee9afcfc7da61d92682",
+            "decimals": 18
+          },
+          "amount": 6802118370.351568,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x402615a3277dd715eb56495a754e1c33a5e15ad6",
+          "gas_used": 121107,
+          "gas_price": 33000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc696e828c00d611335ba3fca6d573fcf7579033ff467d216bb6f2a49f1c377b0",
+          "timestamp": "2024-12-19T23:40:19",
+          "block_number": 774296,
+          "type": "buy",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 31815132.71,
+          "from": "0x458b14915e651243acf89c05859a22d5cff976a6",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 5228324,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xba0ed498d575480f5d2c8e9da5840ec23c1c6af7f7311da6ab553c8b6cdf098b",
+          "timestamp": "2025-01-05T22:54:16",
+          "block_number": 2633881,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xba0ed498d575480f5d2c8e9da5840ec23c1c6af7f7311da6ab553c8b6cdf098b",
+          "timestamp": "2025-01-05T22:54:16",
+          "block_number": 2633881,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xba0ed498d575480f5d2c8e9da5840ec23c1c6af7f7311da6ab553c8b6cdf098b",
+          "timestamp": "2025-01-05T22:54:16",
+          "block_number": 2633881,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xba0ed498d575480f5d2c8e9da5840ec23c1c6af7f7311da6ab553c8b6cdf098b",
+          "timestamp": "2025-01-05T22:54:16",
+          "block_number": 2633881,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xe6dd7aa665955c9ec9eb62bacceb8c1b598da63e468784423aacabb68743aa90",
+          "timestamp": "2025-01-16T18:10:29",
+          "block_number": 4180127,
+          "type": "sell",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1000.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x68705637c16bf32a28a82914f7aadefb3abe31cd",
+          "gas_used": 113106,
+          "gas_price": 110000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x64eb098ae5b632db818d1983fb2b94c9728d24ba9df6fc2a93edfd9a4b418e73",
+          "timestamp": "2025-01-05T02:55:04",
+          "block_number": 2535583,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x64eb098ae5b632db818d1983fb2b94c9728d24ba9df6fc2a93edfd9a4b418e73",
+          "timestamp": "2025-01-05T02:55:04",
+          "block_number": 2535583,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x64eb098ae5b632db818d1983fb2b94c9728d24ba9df6fc2a93edfd9a4b418e73",
+          "timestamp": "2025-01-05T02:55:04",
+          "block_number": 2535583,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x64eb098ae5b632db818d1983fb2b94c9728d24ba9df6fc2a93edfd9a4b418e73",
+          "timestamp": "2025-01-05T02:55:04",
+          "block_number": 2535583,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xefb73ad5dcbbf2feed2d44af1cb07c8983318346f5edbb712e5dab4cffbe313d",
+          "timestamp": "2024-12-21T06:08:59",
+          "block_number": 993440,
+          "type": "buy",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 101162.41649704862,
+          "from": "0x2b5f704ab7061fb4dbfc5876b024f4bdb2f5e8b6",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 379574,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x58b0561898658925cb1928375b9d8f810d850018e5e371b7f3983c80c04682a6",
+          "timestamp": "2025-01-04T18:00:13",
+          "block_number": 2494630,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x58b0561898658925cb1928375b9d8f810d850018e5e371b7f3983c80c04682a6",
+          "timestamp": "2025-01-04T18:00:13",
+          "block_number": 2494630,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x58b0561898658925cb1928375b9d8f810d850018e5e371b7f3983c80c04682a6",
+          "timestamp": "2025-01-04T18:00:13",
+          "block_number": 2494630,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x58b0561898658925cb1928375b9d8f810d850018e5e371b7f3983c80c04682a6",
+          "timestamp": "2025-01-04T18:00:13",
+          "block_number": 2494630,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0c5809ec286957def8bfe3f12dab69fd8447d2d490ad27a8171a48dc253c70b3",
+          "timestamp": "2025-01-05T19:26:52",
+          "block_number": 2617512,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1380000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0c5809ec286957def8bfe3f12dab69fd8447d2d490ad27a8171a48dc253c70b3",
+          "timestamp": "2025-01-05T19:26:52",
+          "block_number": 2617512,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1380000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0c5809ec286957def8bfe3f12dab69fd8447d2d490ad27a8171a48dc253c70b3",
+          "timestamp": "2025-01-05T19:26:52",
+          "block_number": 2617512,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1380000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x0c5809ec286957def8bfe3f12dab69fd8447d2d490ad27a8171a48dc253c70b3",
+          "timestamp": "2025-01-05T19:26:52",
+          "block_number": 2617512,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1380000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xa628e429bdc48bcb3c5e3f7a241c693ee7061e079a47eba8315c5cfda1e3224b",
+          "timestamp": "2025-01-04T03:36:41",
+          "block_number": 2431144,
+          "type": "buy",
+          "token": {
+            "name": "Tin Hat Cat",
+            "symbol": "THC",
+            "contract": "0x17af1df44444ab9091622e4aa66db5bb34e51ad5",
+            "decimals": 18
+          },
+          "amount": 2.5133669891318613,
+          "from": "0xac041df48df9791b0654f1dbbf2cc8450c5f2e9d",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 186696,
+          "gas_price": 2500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xeb8c8b4ae5f81cfcbd44f1cc9aa88e858fc944da3104201a7ee769ac699a13cb",
+          "timestamp": "2025-01-06T03:44:58",
+          "block_number": 2660526,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xeb8c8b4ae5f81cfcbd44f1cc9aa88e858fc944da3104201a7ee769ac699a13cb",
+          "timestamp": "2025-01-06T03:44:58",
+          "block_number": 2660526,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xeb8c8b4ae5f81cfcbd44f1cc9aa88e858fc944da3104201a7ee769ac699a13cb",
+          "timestamp": "2025-01-06T03:44:58",
+          "block_number": 2660526,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xeb8c8b4ae5f81cfcbd44f1cc9aa88e858fc944da3104201a7ee769ac699a13cb",
+          "timestamp": "2025-01-06T03:44:58",
+          "block_number": 2660526,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x86339299081caaf54a225bc64a3abbb14af6feb00dde38c7b64b4a9c7494ea5e",
+          "timestamp": "2025-01-16T18:10:47",
+          "block_number": 4180148,
+          "type": "sell",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1000.0,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x68705637c16bf32a28a82914f7aadefb3abe31cd",
+          "gas_used": 95151,
+          "gas_price": 110000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x03e486519f0a50a2df99f10c2d5ffcba9c2523ff410e9f1eda58a1c0f1395da5",
+          "timestamp": "2025-01-05T05:07:21",
+          "block_number": 2545845,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x03e486519f0a50a2df99f10c2d5ffcba9c2523ff410e9f1eda58a1c0f1395da5",
+          "timestamp": "2025-01-05T05:07:21",
+          "block_number": 2545845,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x03e486519f0a50a2df99f10c2d5ffcba9c2523ff410e9f1eda58a1c0f1395da5",
+          "timestamp": "2025-01-05T05:07:21",
+          "block_number": 2545845,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x03e486519f0a50a2df99f10c2d5ffcba9c2523ff410e9f1eda58a1c0f1395da5",
+          "timestamp": "2025-01-05T05:07:21",
+          "block_number": 2545845,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x143d6f81c95c2d8fe90bef2af7e41b4eb62ad6a18db09123d5bfc39f8aa28264",
+          "timestamp": "2025-01-11T18:50:18",
+          "block_number": 3434681,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 18.0,
+          "from": "0xdbb8eb271cda7e691fcc373e9d64a2f4f3bf9cdf",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 185009,
+          "gas_price": 5500000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2a79d15d568fc605e4a9975ef9210464a5f0d327f9d16184eabcebecd3ef53e1",
+          "timestamp": "2025-01-06T01:55:02",
+          "block_number": 2650297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2a79d15d568fc605e4a9975ef9210464a5f0d327f9d16184eabcebecd3ef53e1",
+          "timestamp": "2025-01-06T01:55:02",
+          "block_number": 2650297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2a79d15d568fc605e4a9975ef9210464a5f0d327f9d16184eabcebecd3ef53e1",
+          "timestamp": "2025-01-06T01:55:02",
+          "block_number": 2650297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x2a79d15d568fc605e4a9975ef9210464a5f0d327f9d16184eabcebecd3ef53e1",
+          "timestamp": "2025-01-06T01:55:02",
+          "block_number": 2650297,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf96d1b7a166b777605f18de51530536bf7771ec9e8df1f00c63ecb328f58fb2f",
+          "timestamp": "2025-01-06T01:34:54",
+          "block_number": 2648252,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf96d1b7a166b777605f18de51530536bf7771ec9e8df1f00c63ecb328f58fb2f",
+          "timestamp": "2025-01-06T01:34:54",
+          "block_number": 2648252,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf96d1b7a166b777605f18de51530536bf7771ec9e8df1f00c63ecb328f58fb2f",
+          "timestamp": "2025-01-06T01:34:54",
+          "block_number": 2648252,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf96d1b7a166b777605f18de51530536bf7771ec9e8df1f00c63ecb328f58fb2f",
+          "timestamp": "2025-01-06T01:34:54",
+          "block_number": 2648252,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x69dd165053565afd00a7a2b6bbd17f8688fa37819094d09ece6e746ef3dd2790",
+          "timestamp": "2025-01-06T04:28:14",
+          "block_number": 2664639,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x69dd165053565afd00a7a2b6bbd17f8688fa37819094d09ece6e746ef3dd2790",
+          "timestamp": "2025-01-06T04:28:14",
+          "block_number": 2664639,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x69dd165053565afd00a7a2b6bbd17f8688fa37819094d09ece6e746ef3dd2790",
+          "timestamp": "2025-01-06T04:28:14",
+          "block_number": 2664639,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x69dd165053565afd00a7a2b6bbd17f8688fa37819094d09ece6e746ef3dd2790",
+          "timestamp": "2025-01-06T04:28:14",
+          "block_number": 2664639,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xf594abd9628030747d63f5fc183dd6e1f75f380b10a6dd307853cdb14e94b69a",
+          "timestamp": "2025-01-16T00:35:50",
+          "block_number": 4075712,
+          "type": "sell",
+          "token": {
+            "name": "Shadow",
+            "symbol": "SHADOW",
+            "contract": "0x3333b97138d4b086720b5ae8a7844b1345a33333",
+            "decimals": 18
+          },
+          "amount": 546.8889544922305,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x9b99e9c620b2e2f09e0b9fced8f679eecf2653fe",
+          "gas_used": 720877,
+          "gas_price": 35000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xde39fa595779300e110d8c904bee6ede0eec98b90cf72e7b2af21d382d435223",
+          "timestamp": "2025-01-06T00:09:18",
+          "block_number": 2640064,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xde39fa595779300e110d8c904bee6ede0eec98b90cf72e7b2af21d382d435223",
+          "timestamp": "2025-01-06T00:09:18",
+          "block_number": 2640064,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xde39fa595779300e110d8c904bee6ede0eec98b90cf72e7b2af21d382d435223",
+          "timestamp": "2025-01-06T00:09:18",
+          "block_number": 2640064,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xde39fa595779300e110d8c904bee6ede0eec98b90cf72e7b2af21d382d435223",
+          "timestamp": "2025-01-06T00:09:18",
+          "block_number": 2640064,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 4.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e801709c76eb1df2be4ccb441e5312b7f74901ae0f2605dcdbe4014cf8a621b",
+          "timestamp": "2025-01-06T02:13:49",
+          "block_number": 2652354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e801709c76eb1df2be4ccb441e5312b7f74901ae0f2605dcdbe4014cf8a621b",
+          "timestamp": "2025-01-06T02:13:49",
+          "block_number": 2652354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e801709c76eb1df2be4ccb441e5312b7f74901ae0f2605dcdbe4014cf8a621b",
+          "timestamp": "2025-01-06T02:13:49",
+          "block_number": 2652354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x3e801709c76eb1df2be4ccb441e5312b7f74901ae0f2605dcdbe4014cf8a621b",
+          "timestamp": "2025-01-06T02:13:49",
+          "block_number": 2652354,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 8.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xbe85c7bb2672640cee396cbd81212186c0803b30624754948e1fdb0d1965c45c",
+          "timestamp": "2025-01-04T23:07:31",
+          "block_number": 2519235,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xbe85c7bb2672640cee396cbd81212186c0803b30624754948e1fdb0d1965c45c",
+          "timestamp": "2025-01-04T23:07:31",
+          "block_number": 2519235,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xbe85c7bb2672640cee396cbd81212186c0803b30624754948e1fdb0d1965c45c",
+          "timestamp": "2025-01-04T23:07:31",
+          "block_number": 2519235,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xbe85c7bb2672640cee396cbd81212186c0803b30624754948e1fdb0d1965c45c",
+          "timestamp": "2025-01-04T23:07:31",
+          "block_number": 2519235,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xeec2a3814ba53286f2dec026bd8b283350820a4e1cbe2eb7c59ff91fd3e38999",
+          "timestamp": "2025-01-19T20:22:48",
+          "block_number": 4585668,
+          "type": "buy",
+          "token": {
+            "name": "Bridged USDC (Sonic Labs)",
+            "symbol": "USDC.e",
+            "contract": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "decimals": 6
+          },
+          "amount": 3000.00008,
+          "from": "0x4e216c15697c1392fe59e1014b009505e05810df",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 331789,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xeec2a3814ba53286f2dec026bd8b283350820a4e1cbe2eb7c59ff91fd3e38999",
+          "timestamp": "2025-01-19T20:22:48",
+          "block_number": 4585668,
+          "type": "sell",
+          "token": {
+            "name": "Silo Finance Borrowable USDC.e Deposit, SiloId: 8",
+            "symbol": "bUSDC.e-8",
+            "contract": "0x4e216c15697c1392fe59e1014b009505e05810df",
+            "decimals": 9
+          },
+          "amount": 2999.925461217,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x0000000000000000000000000000000000000000",
+          "gas_used": 331789,
+          "gas_price": 55000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x369926a35462e16b6463152172d81877f787aa85130c6f3ca866789dfa301a89",
+          "timestamp": "2025-01-04T16:49:35",
+          "block_number": 2488522,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x369926a35462e16b6463152172d81877f787aa85130c6f3ca866789dfa301a89",
+          "timestamp": "2025-01-04T16:49:35",
+          "block_number": 2488522,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x369926a35462e16b6463152172d81877f787aa85130c6f3ca866789dfa301a89",
+          "timestamp": "2025-01-04T16:49:35",
+          "block_number": 2488522,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x369926a35462e16b6463152172d81877f787aa85130c6f3ca866789dfa301a89",
+          "timestamp": "2025-01-04T16:49:35",
+          "block_number": 2488522,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 1.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1100000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0xc840ef35446e5b648827a3c68ef447af053b404bc6ec9296d86a77b270b9debb",
+          "timestamp": "2025-01-16T06:40:56",
+          "block_number": 4110540,
+          "type": "sell",
+          "token": {
+            "name": "Ruggie's Pizza",
+            "symbol": "RUGGIE",
+            "contract": "0xb2a909b8bcce9b30bbc9d4c748fd897d6ad9c285",
+            "decimals": 18
+          },
+          "amount": 199999.99999999997,
+          "from": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "to": "0x9b99e9c620b2e2f09e0b9fced8f679eecf2653fe",
+          "gas_used": 531011,
+          "gas_price": 33000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x6e8456b35c11ee7420033f8f8586e295dd096fd4685152ba80cf4ae59f5981e7",
+          "timestamp": "2025-01-17T15:22:37",
+          "block_number": 4278477,
+          "type": "buy",
+          "token": {
+            "name": "xShadow",
+            "symbol": "xSHADOW",
+            "contract": "0x5050bc082ff4a74fb6b0b04385defddb114b2424",
+            "decimals": 18
+          },
+          "amount": 1.62358861487252,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 65294,
+          "gas_price": 110000000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x66ec59b77f9de796c755601322d663b112bb9ddbd65bc9087ff3fcca28000fd5",
+          "timestamp": "2025-01-05T01:32:15",
+          "block_number": 2529484,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x66ec59b77f9de796c755601322d663b112bb9ddbd65bc9087ff3fcca28000fd5",
+          "timestamp": "2025-01-05T01:32:15",
+          "block_number": 2529484,
+          "type": "buy",
+          "token": {
+            "name": "Derp Token",
+            "symbol": "DERP",
+            "contract": "0xe920d1da9a4d59126dc35996ea242d60efca1304",
+            "decimals": 18
+          },
+          "amount": 2.0,
+          "from": "0x293c897aac96fdd0b0eb4039ee5ab5dad28737aa",
+          "to": "0x579c0c05b15e9268e33f00a49aec8b7cdb8c4f27",
+          "gas_used": 111517,
+          "gas_price": 1110000000
+        }
+      },
+      {
+        "chain": "sonic",
+        "transaction": {
+          "hash": "0x66ec59b77f9de796c755601322d663b112bb9ddbd65bc9087ff3fcca28000fd5"

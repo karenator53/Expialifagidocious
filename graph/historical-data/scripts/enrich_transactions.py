@@ -3,125 +3,280 @@ import requests
 import os
 import glob
 from datetime import datetime
-from typing import Dict, List, Optional
+import time
+from typing import Dict, List, Optional, Set
 from tqdm import tqdm
 
 class SubgraphDataEnricher:
     def __init__(self):
+        # Update endpoints to use production URLs with correct subgraph IDs
         self.endpoints = {
-            'ethereum': 'https://api.studio.thegraph.com/query/66740/historical-data/v0.0.3',
-            'base': 'https://api.studio.thegraph.com/query/66740/historical-data-base/v0.0.1',
-            'sonic': 'https://api.studio.thegraph.com/query/66740/historical-data-sonic/v0.0.1'
+            'ethereum': 'https://gateway.thegraph.com/api/de5f9271c76a8aef76d0fd256d2c5b7d/subgraphs/id/3NDxoN5yx98c1Kch8Z6vhtjcAJqQckhfbFEwNYWZMFZd',
+            'base': 'https://gateway.thegraph.com/api/de5f9271c76a8aef76d0fd256d2c5b7d/subgraphs/id/61B4py85G5mC2LzLg6CVnMzjqRoiPcmnnEmmqER7oKDu',
+            'sonic': 'https://gateway.thegraph.com/api/de5f9271c76a8aef76d0fd256d2c5b7d/subgraphs/id/3NDxoN5yx98c1Kch8Z6vhtjcAJqQckhfbFEwNYWZMFZd'
         }
+        # Initialize session with recommended headers from The Graph docs
         self.session = requests.Session()
+        self.session.headers.update({
+            'Content-Type': 'application/json',
+            'User-Agent': 'GraphQL-Client'
+        })
+        # Initialize block ranges as empty, will be fetched dynamically
+        self.block_ranges = {}
+        # Add delay between retries
+        self.retry_delay = 1.0
         
+    def get_chain_block_range(self, chain: str) -> Dict[str, int]:
+        """Query the subgraph to get the actual block range using multiple methods."""
+        # First try the _meta query
+        meta_query = """
+        {
+            _meta {
+                block {
+                    number
+                }
+                deployment
+                hasIndexingErrors
+                features
+            }
+        }
+        """
+        
+        # Also try to get the earliest and latest blocks with data
+        range_query = """
+        {
+            tokens(first: 1, orderBy: createdAtBlockNumber, orderDirection: asc) {
+                createdAtBlockNumber
+            }
+            _meta {
+                block {
+                    number
+                }
+            }
+        }
+        """
+        
+        result = self.query_subgraph(chain, range_query)
+        if result and 'data' in result:
+            meta = result['data'].get('_meta', {})
+            tokens = result['data'].get('tokens', [])
+            
+            latest_block = meta.get('block', {}).get('number', 0)
+            start_block = tokens[0].get('createdAtBlockNumber', 0) if tokens else 0
+            
+            # Use known minimum start blocks for specific chains
+            if chain == 'sonic' and start_block < 10000835:
+                start_block = 10000835
+                
+            return {'start': start_block, 'end': latest_block}
+            
+        return {'start': 0, 'end': float('inf')}
+
+    def update_range_from_error(self, chain: str, error_msg: str):
+        """Update block range based on error message with better parsing."""
+        try:
+            if 'before minimum `startBlock` of manifest' in error_msg:
+                start_block = int(error_msg.split('startBlock` of manifest ')[1].strip())
+                current = self.block_ranges.get(chain, {'start': 0, 'end': float('inf')})
+                self.block_ranges[chain] = {
+                    'start': max(current['start'], start_block),
+                    'end': current['end']
+                }
+            elif 'missing block' in error_msg and 'latest' in error_msg:
+                # Extract both the requested block and latest block
+                parts = error_msg.split('missing block: ')[1].split(', latest: ')
+                if len(parts) == 2:
+                    requested_block = int(''.join(c for c in parts[0] if c.isdigit()))
+                    latest_block = int(''.join(c for c in parts[1] if c.isdigit()))
+                    current = self.block_ranges.get(chain, {'start': 0, 'end': float('inf')})
+                    self.block_ranges[chain] = {
+                        'start': current['start'],
+                        'end': min(current['end'], latest_block)
+                    }
+                    print(f"Updated {chain} block range: start={self.block_ranges[chain]['start']}, end={self.block_ranges[chain]['end']}")
+                    print(f"Note: Requested block {requested_block} is beyond the latest indexed block {latest_block}")
+        except Exception as e:
+            print(f"Error updating block range from message: {str(e)}")
+
     def query_subgraph(self, chain: str, query: str, retries: int = 3) -> Optional[Dict]:
-        """Execute a GraphQL query against the specified chain's subgraph with retries."""
+        """Execute a GraphQL query with improved error handling and retries."""
         if chain not in self.endpoints:
             print(f"Unsupported chain: {chain}")
             return None
             
         for attempt in range(retries):
             try:
+                if attempt > 0:
+                    # Exponential backoff
+                    time.sleep(self.retry_delay * (2 ** (attempt - 1)))
+                    
                 response = self.session.post(
                     self.endpoints[chain],
                     json={'query': query},
-                    timeout=10
+                    timeout=30
                 )
-                response.raise_for_status()
-                return response.json()
-            except requests.exceptions.RequestException as e:
-                if attempt == retries - 1:
-                    print(f"Error querying {chain} subgraph after {retries} attempts: {str(e)}")
+                
+                if response.status_code == 429:  # Too Many Requests
+                    wait_time = float(response.headers.get('Retry-After', self.retry_delay))
+                    if attempt < retries - 1:
+                        print(f"Rate limited on {chain}, waiting {wait_time}s...")
+                        time.sleep(wait_time)
+                        continue
+                    print(f"Rate limit exceeded on {chain}")
                     return None
-                print(f"Attempt {attempt + 1} failed, retrying...")
+                    
+                response.raise_for_status()
+                result = response.json()
+                
+                if 'errors' in result:
+                    for error in result['errors']:
+                        error_msg = error.get('message', '')
+                        print(f"GraphQL error for {chain}: {error_msg}")
+                        self.update_range_from_error(chain, error_msg)
+                    return None
+                    
+                return result
+                
+            except requests.exceptions.RequestException as e:
+                print(f"Request error on {chain} (attempt {attempt + 1}/{retries}): {str(e)}")
+                if attempt == retries - 1:
+                    return None
                 continue
             except Exception as e:
-                print(f"Unexpected error querying {chain} subgraph: {str(e)}")
+                print(f"Unexpected error querying {chain}: {str(e)}")
                 return None
 
-    def get_eth_price_at_block(self, chain: str, block_number: int) -> Optional[float]:
-        """Get ETH price in USD at a specific block number."""
-        query = """
-        {
-            bundle(id: "1", block: { number: %d }) {
-                ethPrice
-            }
-        }
-        """ % block_number
-        
-        result = self.query_subgraph(chain, query)
-        if result and 'data' in result and result['data']['bundle']:
-            return float(result['data']['bundle']['ethPrice'])
-        return None
-
-    def get_token_data_at_block(self, chain: str, token_address: str, block_number: int) -> Optional[Dict]:
-        """Get token price and volume data at a specific block number."""
-        query = """
-        {
-            token(id: "%s", block: { number: %d }) {
-                id
-                symbol
-                name
-                decimals
-                derivedETH
-                totalSupply
-                volume
-                volumeUSD
-                untrackedVolumeUSD
-                txCount
-                totalLiquidity
-                priceUSD
-                feesUSD
-                poolCount
-            }
-            pairs(where: { token0: "%s" }, first: 5, block: { number: %d }) {
-                id
-                token0Price
-                token1Price
-                volumeUSD
-                reserve0
-                reserve1
-                liquidityProviderCount
-            }
-        }
-        """ % (token_address.lower(), block_number, token_address.lower(), block_number)
-        
-        result = self.query_subgraph(chain, query)
-        if not result or 'data' not in result:
-            return None
+    def update_block_ranges(self):
+        """Update block ranges for all chains."""
+        print("\nUpdating block ranges from subgraphs...")
+        for chain in self.endpoints.keys():
+            print(f"Querying {chain} block range...")
+            self.block_ranges[chain] = self.get_chain_block_range(chain)
+            print(f"- {chain}: blocks {self.block_ranges[chain]['start']} to {self.block_ranges[chain]['end']}")
             
-        data = result['data']
-        token_data = data['token']
-        pairs_data = data['pairs']
+    def filter_blocks_in_range(self, chain: str, block_numbers: Set[int]) -> Set[int]:
+        """Filter block numbers based on chain-specific constraints."""
+        if not block_numbers:
+            return set()
+            
+        min_block = min(block_numbers)
+        max_block = max(block_numbers)
         
-        if token_data:
-            token_data['pairs'] = pairs_data
-        return token_data
+        # Only enforce minimum block constraints for specific chains
+        if chain == 'sonic' and min_block < 10000835:
+            print(f"\nWarning: Some blocks for {chain} are before the minimum start block (10000835)")
+            return {block for block in block_numbers if block >= 10000835}
+            
+        return block_numbers  # Return all blocks for time-travel queries
 
-    def calculate_usd_values(self, tx: Dict, token_data: Dict, eth_price: float) -> Dict:
-        """Calculate USD values for the transaction."""
-        amount = float(tx['transaction']['amount'])
-        eth_value = float(token_data.get('derivedETH', 0))
-        
-        return {
-            'amount_usd': amount * eth_value * eth_price if eth_value and eth_price else None,
-            'token_price_usd': eth_value * eth_price if eth_value and eth_price else None,
-            'eth_price_usd': eth_price,
-            'gas_cost_usd': (int(tx['transaction']['gas_used']) * int(tx['transaction']['gas_price']) / 1e18) * eth_price
+    def get_block_data(self, chain: str, token_addresses: Set[str], block_numbers: Set[int]) -> Dict:
+        """Get token and price data for multiple blocks in a single query."""
+        if not block_numbers:
+            print(f"No blocks provided for {chain}")
+            return {}
+
+        # Updated fragments to match the schema
+        fragments = """
+        fragment TokenFields on Token {
+            id
+            symbol
+            name
+            decimals
+            derivedETH
+            totalValueLockedUSD
+            volume
+            volumeUSD
+            untrackedVolumeUSD
+            txCount
         }
+
+        fragment PairFields on Pair {
+            id
+            address
+            createdAtBlockNumber
+            createdAtTimestamp
+            reserve0
+            reserve1
+            totalSupply
+            reserveUSD
+            volumeToken0
+            volumeToken1
+            volumeUSD
+            untrackedVolumeUSD
+            txCount
+        }
+        """
+        
+        all_data = {}
+        
+        # Process in batches for efficiency
+        BLOCK_BATCH_SIZE = 5
+        TOKEN_BATCH_SIZE = 3
+        
+        block_batches = [list(block_numbers)[i:i+BLOCK_BATCH_SIZE] 
+                        for i in range(0, len(block_numbers), BLOCK_BATCH_SIZE)]
+        token_batches = [list(token_addresses)[i:i+TOKEN_BATCH_SIZE] 
+                        for i in range(0, len(token_addresses), TOKEN_BATCH_SIZE)]
+        
+        print(f"\nProcessing queries for {chain}:")
+        print(f"- {len(block_batches)} block batches")
+        print(f"- {len(token_batches)} token batches")
+        print(f"- Total queries: {len(block_batches) * len(token_batches)}")
+        
+        for block_batch in block_batches:
+            for token_batch in token_batches:
+                # Build query for this batch
+                query = fragments + "\nquery GetBlockData {\n"
+                
+                # Add bundle queries for each block
+                for block in block_batch:
+                    query += f"""
+                    b{block}: bundle(id: "1", block: {{ number: {block} }}) {{
+                        ethPrice
+                    }}
+                    """
+                
+                # Add token and pair queries for each combination
+                for token in token_batch:
+                    for block in block_batch:
+                        query += f"""
+                        t{token}_{block}: token(id: "{token}", block: {{ number: {block} }}) {{
+                            ...TokenFields
+                        }}
+                        p{token}_{block}: pairs(
+                            first: 5,
+                            where: {{ or: [
+                                {{ token0: "{token}" }},
+                                {{ token1: "{token}" }}
+                            ]}},
+                            block: {{ number: {block} }}
+                        ) {{
+                            ...PairFields
+                            token0 {{
+                                ...TokenFields
+                            }}
+                            token1 {{
+                                ...TokenFields
+                            }}
+                        }}
+                        """
+                
+                query += "}"
+                
+                # Execute query and merge results
+                result = self.query_subgraph(chain, query)
+                if result and 'data' in result:
+                    all_data.update(result['data'])
+        
+        return all_data
 
     def enrich_transactions(self, transactions_file: str) -> Dict:
         """Enrich transaction data with historical price and volume data."""
-        # Load transaction data
         try:
             with open(transactions_file, 'r') as f:
                 data = json.load(f)
         except json.JSONDecodeError as e:
             print(f"Error reading JSON file {transactions_file}: {str(e)}")
-            raise
-        except Exception as e:
-            print(f"Error opening file {transactions_file}: {str(e)}")
             raise
             
         enriched_data = {
@@ -134,59 +289,83 @@ class SubgraphDataEnricher:
         # Process each chain's transactions
         for chain, transactions in data['transactions_by_chain'].items():
             print(f"\nProcessing {chain} transactions...")
+            
+            # Collect unique token addresses and block numbers
+            token_addresses = {tx['transaction']['token']['contract'].lower() for tx in transactions}
+            block_numbers = {tx['transaction']['block_number'] for tx in transactions}
+            
+            print(f"Found {len(token_addresses)} unique tokens and {len(block_numbers)} unique blocks")
+            
+            # Process in smaller batches
+            BATCH_SIZE = 5  # Reduced batch size
             enriched_transactions = []
             
-            # Create progress bar for this chain's transactions
             with tqdm(total=len(transactions), desc=f"{chain.title()} Progress") as pbar:
+                # Create a mapping of block numbers to transactions for efficient lookup
+                block_to_txs = {}
                 for tx in transactions:
-                    try:
-                        # Get ETH price at transaction block
-                        eth_price = self.get_eth_price_at_block(chain, tx['transaction']['block_number'])
-                        
-                        # Get token data at transaction block
-                        token_data = self.get_token_data_at_block(
-                            chain,
-                            tx['transaction']['token']['contract'],
-                            tx['transaction']['block_number']
-                        )
-                        
-                        # Enrich transaction with token data
-                        enriched_tx = tx.copy()
-                        if token_data:
-                            # Calculate USD values
-                            usd_values = self.calculate_usd_values(tx, token_data, eth_price)
+                    block_num = tx['transaction']['block_number']
+                    if block_num not in block_to_txs:
+                        block_to_txs[block_num] = []
+                    block_to_txs[block_num].append(tx)
+                
+                # Process blocks in batches
+                for i in range(0, len(block_numbers), BATCH_SIZE):
+                    block_batch = list(block_numbers)[i:i+BATCH_SIZE]
+                    
+                    # Get data for this batch
+                    block_data = self.get_block_data(chain, token_addresses, set(block_batch))
+                    
+                    # Process all transactions in the current block batch
+                    for block_num in block_batch:
+                        if block_num not in block_to_txs:
+                            continue
                             
-                            enriched_tx['token_data'] = {
-                                'price_eth': token_data.get('derivedETH'),
-                                'price_usd': token_data.get('priceUSD'),
-                                'total_supply': token_data.get('totalSupply'),
-                                'total_liquidity': token_data.get('totalLiquidity'),
-                                'volume': token_data.get('volume'),
-                                'volume_usd': token_data.get('volumeUSD'),
-                                'untracked_volume_usd': token_data.get('untrackedVolumeUSD'),
-                                'fees_usd': token_data.get('feesUSD'),
-                                'pool_count': token_data.get('poolCount'),
-                                'tx_count': token_data.get('txCount'),
-                                'top_pairs': [{
-                                    'pair_address': pair['id'],
-                                    'token0_price': pair['token0Price'],
-                                    'token1_price': pair['token1Price'],
-                                    'volume_usd': pair['volumeUSD'],
-                                    'reserve0': pair['reserve0'],
-                                    'reserve1': pair['reserve1'],
-                                    'lp_count': pair['liquidityProviderCount']
-                                } for pair in token_data.get('pairs', [])]
-                            }
-                            enriched_tx['usd_values'] = usd_values
-                            
-                        enriched_transactions.append(enriched_tx)
-                        pbar.update(1)
-                        
-                    except Exception as e:
-                        print(f"\nError processing transaction in {chain}: {str(e)}")
-                        enriched_transactions.append(tx)  # Keep original transaction on error
-                        pbar.update(1)
-                        continue
+                        for tx in block_to_txs[block_num]:
+                            try:
+                                token_addr = tx['transaction']['token']['contract'].lower()
+                                
+                                # Get ETH price and token data from the combined query results
+                                eth_price = float(block_data.get(f'b{block_num}', {}).get('ethPrice', 0))
+                                token_data = block_data.get(f't{token_addr}_{block_num}')
+                                pairs_data = block_data.get(f'p{token_addr}_{block_num}', [])
+                                
+                                # Enrich transaction
+                                enriched_tx = tx.copy()
+                                if token_data and eth_price:
+                                    # Calculate USD values
+                                    amount = float(tx['transaction']['amount'])
+                                    eth_value = float(token_data.get('derivedETH', 0))
+                                    
+                                    enriched_tx['token_data'] = {
+                                        'price_eth': token_data.get('derivedETH'),
+                                        'price_usd': token_data.get('priceUSD'),
+                                        'total_supply': token_data.get('totalSupply'),
+                                        'total_liquidity': token_data.get('totalLiquidity'),
+                                        'volume': token_data.get('volume'),
+                                        'volume_usd': token_data.get('volumeUSD'),
+                                        'untracked_volume_usd': token_data.get('untrackedVolumeUSD'),
+                                        'fees_usd': token_data.get('feesUSD'),
+                                        'pool_count': token_data.get('poolCount'),
+                                        'tx_count': token_data.get('txCount'),
+                                        'top_pairs': pairs_data
+                                    }
+                                    
+                                    enriched_tx['usd_values'] = {
+                                        'amount_usd': amount * eth_value * eth_price if eth_value else None,
+                                        'token_price_usd': eth_value * eth_price if eth_value else None,
+                                        'eth_price_usd': eth_price,
+                                        'gas_cost_usd': (int(tx['transaction']['gas_used']) * int(tx['transaction']['gas_price']) / 1e18) * eth_price
+                                    }
+                                    
+                                enriched_transactions.append(enriched_tx)
+                                pbar.update(1)
+                                
+                            except Exception as e:
+                                print(f"\nError processing transaction in {chain}: {str(e)}")
+                                enriched_transactions.append(tx)
+                                pbar.update(1)
+                                continue
             
             enriched_data['transactions_by_chain'][chain] = enriched_transactions
             
