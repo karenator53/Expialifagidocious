@@ -1,10 +1,23 @@
 import { BigInt } from "@graphprotocol/graph-ts"
 import { PairCreated as PairCreatedEvent } from "../generated/UniswapV2Factory/UniswapV2Factory"
-import { Pair, Token } from "../generated/schema"
-import { UniswapV2Pair as PairTemplate } from "../generated/templates"
+import { Pair, Token, Factory } from "../generated/schema"
+import { SonicPair as PairTemplate } from "../generated/templates"
 import { loadOrCreateToken, ZERO_BD, ZERO_BI } from "./utils"
 
 export function handlePairCreated(event: PairCreatedEvent): void {
+  // Load or create factory using the factory contract address as the ID
+  let factory = Factory.load(event.address.toHexString())
+  if (factory === null) {
+    factory = new Factory(event.address.toHexString())
+    factory.pairCount = ZERO_BI
+    factory.totalVolumeUSD = ZERO_BD
+    factory.totalLiquidityUSD = ZERO_BD
+    factory.txCount = ZERO_BI
+    factory.totalValueLockedUSD = ZERO_BD
+  }
+  factory.pairCount = factory.pairCount.plus(BigInt.fromI32(1))
+  factory.save()
+
   // Load or create tokens
   let token0 = loadOrCreateToken(event.params.token0)
   let token1 = loadOrCreateToken(event.params.token1)

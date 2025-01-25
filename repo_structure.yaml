@@ -1,0 +1,685 @@
+  - path: /backend
+    type: directory
+    contents:
+    - path: /backend/CACHEDIR.TAG
+      type: file
+    - path: /backend/Dockerfile
+      type: file
+    - path: /backend/main.py
+      type: file
+    - path: /backend/mock_data
+      type: directory
+      contents:
+    - path: /backend/models
+      type: directory
+      contents:
+      - path: /backend/models/wallet.py
+        type: file
+      - path: /backend/models/__init__.py
+        type: file
+    - path: /backend/models.py
+      type: file
+    - path: /backend/pyvenv.cfg
+      type: file
+    - path: /backend/README.md
+      type: file
+    - path: /backend/requirements.txt
+      type: file
+    - path: /backend/routers
+      type: directory
+      contents:
+      - path: /backend/routers/wallets.py
+        type: file
+      - path: /backend/routers/__init__.py
+        type: file
+    - path: /backend/Scripts
+      type: directory
+      contents:
+      - path: /backend/Scripts/activate
+        type: file
+      - path: /backend/Scripts/activate.bat
+        type: file
+      - path: /backend/Scripts/activate.fish
+        type: file
+      - path: /backend/Scripts/activate.nu
+        type: file
+      - path: /backend/Scripts/activate.ps1
+        type: file
+      - path: /backend/Scripts/activate_this.py
+        type: file
+      - path: /backend/Scripts/deactivate.bat
+        type: file
+      - path: /backend/Scripts/dotenv.exe
+        type: file
+      - path: /backend/Scripts/libcrypto-3.dll
+        type: file
+      - path: /backend/Scripts/libffi-8.dll
+        type: file
+      - path: /backend/Scripts/libssl-3.dll
+        type: file
+      - path: /backend/Scripts/normalizer.exe
+        type: file
+      - path: /backend/Scripts/pip-3.13.exe
+        type: file
+      - path: /backend/Scripts/pip.exe
+        type: file
+      - path: /backend/Scripts/pip3.13.exe
+        type: file
+      - path: /backend/Scripts/pip3.exe
+        type: file
+      - path: /backend/Scripts/pydoc.bat
+        type: file
+      - path: /backend/Scripts/python.exe
+        type: file
+      - path: /backend/Scripts/python3.dll
+        type: file
+      - path: /backend/Scripts/python313.dll
+        type: file
+      - path: /backend/Scripts/pythonw.exe
+        type: file
+      - path: /backend/Scripts/pywin32_postinstall.py
+        type: file
+      - path: /backend/Scripts/pywin32_testall.py
+        type: file
+      - path: /backend/Scripts/sqlite3.dll
+        type: file
+      - path: /backend/Scripts/tcl86t.dll
+        type: file
+      - path: /backend/Scripts/tk86t.dll
+        type: file
+      - path: /backend/Scripts/tqdm.exe
+        type: file
+      - path: /backend/Scripts/uvicorn.exe
+        type: file
+      - path: /backend/Scripts/vcruntime140.dll
+        type: file
+      - path: /backend/Scripts/vcruntime140_1.dll
+        type: file
+      - path: /backend/Scripts/zlib1.dll
+        type: file
+    - path: /backend/__init__.py
+      type: file
+  - path: /docs
+    type: directory
+    contents:
+    - path: /docs/app_flow_document.md
+      type: file
+    - path: /docs/backend_structure_document.md
+      type: file
+    - path: /docs/changelog.md
+      type: file
+    - path: /docs/cursorrules_file.md
+      type: file
+    - path: /docs/file_structure_document.md
+      type: file
+    - path: /docs/frontend_guidelines_document.md
+      type: file
+    - path: /docs/project_plan.md
+      type: file
+    - path: /docs/project_requirements_document.md
+      type: file
+    - path: /docs/sonicscan.md
+      type: file
+    - path: /docs/tech_stack_document.md
+      type: file
+  - path: /graph
+    type: directory
+    contents:
+    - path: /graph/historical-data
+      type: directory
+      contents:
+      - path: /graph/historical-data/abis
+        type: directory
+        contents:
+        - path: /graph/historical-data/abis/ERC20.json
+          type: file
+        - path: /graph/historical-data/abis/UniswapV2Factory.json
+          type: file
+        - path: /graph/historical-data/abis/UniswapV2Pair.json
+          type: file
+        - path: /graph/historical-data/abis/UniswapV3Factory.json
+          type: file
+        - path: /graph/historical-data/abis/UniswapV3Pool.json
+          type: file
+      - path: /graph/historical-data/docker-compose.yml
+        type: file
+      - path: /graph/historical-data/networks.json
+        type: file
+      - path: /graph/historical-data/package-lock.json
+        type: file
+      - path: /graph/historical-data/package.json
+        type: file
+      - path: /graph/historical-data/schema.graphql
+        type: file
+      - path: /graph/historical-data/scripts
+        type: directory
+        contents:
+        - path: /graph/historical-data/scripts/enrich_transactions.py
+          type: file
+      - path: /graph/historical-data/src
+        type: directory
+        contents:
+        - path: /graph/historical-data/src/aerodrome-factory.ts
+          type: file
+        - path: /graph/historical-data/src/baseswap-factory.ts
+          type: file
+        - path: /graph/historical-data/src/sushiswap-factory.ts
+          type: file
+        - path: /graph/historical-data/src/uniswap-v-2-factory.ts
+          type: file
+        - path: /graph/historical-data/src/uniswap-v2-factory.ts
+          type: file
+        - path: /graph/historical-data/src/uniswap-v2-pair.ts
+          type: file
+        - path: /graph/historical-data/src/uniswap-v3-factory.ts
+          type: file
+        - path: /graph/historical-data/src/uniswap-v3-pool.ts
+          type: file
+        - path: /graph/historical-data/src/utils.ts
+          type: file
+      - path: /graph/historical-data/subgraph.yaml
+        type: file
+      - path: /graph/historical-data/tests
+        type: directory
+        contents:
+        - path: /graph/historical-data/tests/uniswap-v-2-factory-utils.ts
+          type: file
+        - path: /graph/historical-data/tests/uniswap-v-2-factory.test.ts
+          type: file
+      - path: /graph/historical-data/tsconfig.json
+        type: file
+    - path: /graph/historical-data-base
+      type: directory
+      contents:
+      - path: /graph/historical-data-base/abis
+        type: directory
+        contents:
+        - path: /graph/historical-data-base/abis/ERC20.json
+          type: file
+        - path: /graph/historical-data-base/abis/UniswapV2Factory.json
+          type: file
+        - path: /graph/historical-data-base/abis/UniswapV2Pair.json
+          type: file
+        - path: /graph/historical-data-base/abis/UniswapV3Factory.json
+          type: file
+        - path: /graph/historical-data-base/abis/UniswapV3Pool.json
+          type: file
+      - path: /graph/historical-data-base/generated
+        type: directory
+        contents:
+        - path: /graph/historical-data-base/generated/schema.ts
+          type: file
+        - path: /graph/historical-data-base/generated/templates
+          type: directory
+          contents:
+          - path: /graph/historical-data-base/generated/templates/UniswapV2Pair
+            type: directory
+            contents:
+            - path: /graph/historical-data-base/generated/templates/UniswapV2Pair/ERC20.ts
+              type: file
+            - path: /graph/historical-data-base/generated/templates/UniswapV2Pair/UniswapV2Pair.ts
+              type: file
+          - path: /graph/historical-data-base/generated/templates/UniswapV3Pool
+            type: directory
+            contents:
+            - path: /graph/historical-data-base/generated/templates/UniswapV3Pool/ERC20.ts
+              type: file
+            - path: /graph/historical-data-base/generated/templates/UniswapV3Pool/UniswapV3Pool.ts
+              type: file
+        - path: /graph/historical-data-base/generated/templates.ts
+          type: file
+        - path: /graph/historical-data-base/generated/UniswapV2Factory
+          type: directory
+          contents:
+          - path: /graph/historical-data-base/generated/UniswapV2Factory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-base/generated/UniswapV2Factory/UniswapV2Factory.ts
+            type: file
+        - path: /graph/historical-data-base/generated/UniswapV3Factory
+          type: directory
+          contents:
+          - path: /graph/historical-data-base/generated/UniswapV3Factory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-base/generated/UniswapV3Factory/UniswapV3Factory.ts
+            type: file
+      - path: /graph/historical-data-base/package-lock.json
+        type: file
+      - path: /graph/historical-data-base/package.json
+        type: file
+      - path: /graph/historical-data-base/schema.graphql
+        type: file
+      - path: /graph/historical-data-base/src
+        type: directory
+        contents:
+        - path: /graph/historical-data-base/src/aerodrome-factory.ts
+          type: file
+        - path: /graph/historical-data-base/src/baseswap-factory.ts
+          type: file
+        - path: /graph/historical-data-base/src/sushiswap-factory.ts
+          type: file
+        - path: /graph/historical-data-base/src/uniswap-v-2-factory.ts
+          type: file
+        - path: /graph/historical-data-base/src/uniswap-v2-factory.ts
+          type: file
+        - path: /graph/historical-data-base/src/uniswap-v2-pair.ts
+          type: file
+        - path: /graph/historical-data-base/src/uniswap-v3-factory.ts
+          type: file
+        - path: /graph/historical-data-base/src/uniswap-v3-pool.ts
+          type: file
+        - path: /graph/historical-data-base/src/utils.ts
+          type: file
+      - path: /graph/historical-data-base/subgraph.yaml
+        type: file
+    - path: /graph/historical-data-sonic
+      type: directory
+      contents:
+      - path: /graph/historical-data-sonic/abis
+        type: directory
+        contents:
+        - path: /graph/historical-data-sonic/abis/ERC20.json
+          type: file
+        - path: /graph/historical-data-sonic/abis/UniswapV2Factory.json
+          type: file
+        - path: /graph/historical-data-sonic/abis/UniswapV2Pair.json
+          type: file
+        - path: /graph/historical-data-sonic/abis/UniswapV3Factory.json
+          type: file
+        - path: /graph/historical-data-sonic/abis/UniswapV3Pool.json
+          type: file
+      - path: /graph/historical-data-sonic/generated
+        type: directory
+        contents:
+        - path: /graph/historical-data-sonic/generated/BeetsFactory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/BeetsFactory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/BeetsFactory/UniswapV2Factory.ts
+            type: file
+        - path: /graph/historical-data-sonic/generated/EqualizerFactory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/EqualizerFactory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/EqualizerFactory/UniswapV2Factory.ts
+            type: file
+        - path: /graph/historical-data-sonic/generated/MetropolisFactory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/MetropolisFactory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/MetropolisFactory/UniswapV2Factory.ts
+            type: file
+        - path: /graph/historical-data-sonic/generated/schema.ts
+          type: file
+        - path: /graph/historical-data-sonic/generated/ShadowFactory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/ShadowFactory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/ShadowFactory/UniswapV2Factory.ts
+            type: file
+        - path: /graph/historical-data-sonic/generated/SwapXFactory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/SwapXFactory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/SwapXFactory/UniswapV2Factory.ts
+            type: file
+        - path: /graph/historical-data-sonic/generated/templates
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/templates/SonicPair
+            type: directory
+            contents:
+            - path: /graph/historical-data-sonic/generated/templates/SonicPair/ERC20.ts
+              type: file
+            - path: /graph/historical-data-sonic/generated/templates/SonicPair/UniswapV2Pair.ts
+              type: file
+          - path: /graph/historical-data-sonic/generated/templates/UniswapV2Pair
+            type: directory
+            contents:
+            - path: /graph/historical-data-sonic/generated/templates/UniswapV2Pair/ERC20.ts
+              type: file
+            - path: /graph/historical-data-sonic/generated/templates/UniswapV2Pair/UniswapV2Pair.ts
+              type: file
+          - path: /graph/historical-data-sonic/generated/templates/UniswapV3Pool
+            type: directory
+            contents:
+            - path: /graph/historical-data-sonic/generated/templates/UniswapV3Pool/ERC20.ts
+              type: file
+            - path: /graph/historical-data-sonic/generated/templates/UniswapV3Pool/UniswapV3Pool.ts
+              type: file
+        - path: /graph/historical-data-sonic/generated/templates.ts
+          type: file
+        - path: /graph/historical-data-sonic/generated/UniswapV2Factory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/UniswapV2Factory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/UniswapV2Factory/UniswapV2Factory.ts
+            type: file
+        - path: /graph/historical-data-sonic/generated/UniswapV3Factory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/UniswapV3Factory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/UniswapV3Factory/UniswapV3Factory.ts
+            type: file
+        - path: /graph/historical-data-sonic/generated/WagmiFactory
+          type: directory
+          contents:
+          - path: /graph/historical-data-sonic/generated/WagmiFactory/ERC20.ts
+            type: file
+          - path: /graph/historical-data-sonic/generated/WagmiFactory/UniswapV2Factory.ts
+            type: file
+      - path: /graph/historical-data-sonic/networks.json
+        type: file
+      - path: /graph/historical-data-sonic/package-lock.json
+        type: file
+      - path: /graph/historical-data-sonic/package.json
+        type: file
+      - path: /graph/historical-data-sonic/schema.graphql
+        type: file
+      - path: /graph/historical-data-sonic/scripts
+        type: directory
+        contents:
+      - path: /graph/historical-data-sonic/src
+        type: directory
+        contents:
+        - path: /graph/historical-data-sonic/src/aerodrome-factory.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/baseswap-factory.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/sushiswap-factory.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/uniswap-v-2-factory.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/uniswap-v2-factory.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/uniswap-v2-pair.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/uniswap-v3-factory.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/uniswap-v3-pool.ts
+          type: file
+        - path: /graph/historical-data-sonic/src/utils.ts
+          type: file
+      - path: /graph/historical-data-sonic/subgraph.yaml
+        type: file
+  - path: /index.html
+    type: file
+  - path: /LICENSE
+    type: file
+  - path: /package-lock.json
+    type: file
+  - path: /package.json
+    type: file
+  - path: /README.md
+    type: file
+  - path: /scripts
+    type: directory
+    contents:
+    - path: /scripts/find_factories.py
+      type: file
+  - path: /src
+    type: directory
+    contents:
+    - path: /src/App.tsx
+      type: file
+    - path: /src/components
+      type: directory
+      contents:
+      - path: /src/components/AddWalletForm.tsx
+        type: file
+      - path: /src/components/Layout.tsx
+        type: file
+      - path: /src/components/Navbar.tsx
+        type: file
+      - path: /src/components/Sprites.tsx
+        type: file
+      - path: /src/components/WalletCard.tsx
+        type: file
+    - path: /src/main.tsx
+      type: file
+    - path: /src/pages
+      type: directory
+      contents:
+      - path: /src/pages/Dashboard.tsx
+        type: file
+      - path: /src/pages/NotFound.tsx
+        type: file
+      - path: /src/pages/WalletGroups.tsx
+        type: file
+    - path: /src/services
+      type: directory
+      contents:
+      - path: /src/services/api.ts
+        type: file
+      - path: /src/services/sonicApi.ts
+        type: file
+    - path: /src/store
+      type: directory
+      contents:
+      - path: /src/store/index.ts
+        type: file
+      - path: /src/store/slices
+        type: directory
+        contents:
+        - path: /src/store/slices/walletsSlice.ts
+          type: file
+    - path: /src/styles
+      type: directory
+      contents:
+      - path: /src/styles/main.scss
+        type: file
+  - path: /testdata
+    type: directory
+    contents:
+    - path: /testdata/alchemy_docs.md
+      type: file
+    - path: /testdata/base-api
+      type: directory
+      contents:
+      - path: /testdata/base-api/accountinfo
+        type: directory
+        contents:
+        - path: /testdata/base-api/accountinfo/eth_getBalance.mdx
+          type: file
+        - path: /testdata/base-api/accountinfo/eth_getCode.mdx
+          type: file
+        - path: /testdata/base-api/accountinfo/eth_getStorageAt.mdx
+          type: file
+        - path: /testdata/base-api/accountinfo/_meta.json
+          type: file
+      - path: /testdata/base-api/accountinfo.mdx
+        type: file
+      - path: /testdata/base-api/blocksinfo
+        type: directory
+        contents:
+        - path: /testdata/base-api/blocksinfo/eth_blockNumber.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/eth_getBlockByHash.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/eth_getBlockByHashfull.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/eth_getBlockByNumber.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/eth_getBlockByNumberfull.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/eth_getBlockTransactionCountByHash.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/eth_getBlockTransactionCountByNumber.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/eth_newBlockFilter.mdx
+          type: file
+        - path: /testdata/base-api/blocksinfo/_meta.json
+          type: file
+      - path: /testdata/base-api/blocksinfo.mdx
+        type: file
+      - path: /testdata/base-api/chaininfo
+        type: directory
+        contents:
+        - path: /testdata/base-api/chaininfo/eth_chainId.mdx
+          type: file
+        - path: /testdata/base-api/chaininfo/eth_syncing.mdx
+          type: file
+        - path: /testdata/base-api/chaininfo/net_listening.mdx
+          type: file
+        - path: /testdata/base-api/chaininfo/net_peerCount.mdx
+          type: file
+        - path: /testdata/base-api/chaininfo/net_version.mdx
+          type: file
+        - path: /testdata/base-api/chaininfo/_meta.json
+          type: file
+      - path: /testdata/base-api/chaininfo.mdx
+        type: file
+      - path: /testdata/base-api/debugandtrace
+        type: directory
+        contents:
+        - path: /testdata/base-api/debugandtrace/debug_traceBlockByHash.mdx
+          type: file
+        - path: /testdata/base-api/debugandtrace/debug_traceBlockByNumber.mdx
+          type: file
+        - path: /testdata/base-api/debugandtrace/debug_traceCall.mdx
+          type: file
+        - path: /testdata/base-api/debugandtrace/debug_traceTransaction.mdx
+          type: file
+        - path: /testdata/base-api/debugandtrace/_meta.json
+          type: file
+      - path: /testdata/base-api/debugandtrace.mdx
+        type: file
+      - path: /testdata/base-api/ethereumbasedifference.mdx
+        type: file
+      - path: /testdata/base-api/eventlogs
+        type: directory
+        contents:
+        - path: /testdata/base-api/eventlogs/eth_getFilterChanges.mdx
+          type: file
+        - path: /testdata/base-api/eventlogs/eth_getFilterLogs.mdx
+          type: file
+        - path: /testdata/base-api/eventlogs/eth_getLogs.mdx
+          type: file
+        - path: /testdata/base-api/eventlogs/eth_newFilter.mdx
+          type: file
+        - path: /testdata/base-api/eventlogs/eth_uninstallFilter.mdx
+          type: file
+        - path: /testdata/base-api/eventlogs/_meta.json
+          type: file
+      - path: /testdata/base-api/eventlogs.mdx
+        type: file
+      - path: /testdata/base-api/executingtransactions
+        type: directory
+        contents:
+        - path: /testdata/base-api/executingtransactions/eth_call.mdx
+          type: file
+        - path: /testdata/base-api/executingtransactions/eth_sendRawTransaction.mdx
+          type: file
+        - path: /testdata/base-api/executingtransactions/_meta.json
+          type: file
+      - path: /testdata/base-api/executingtransactions.mdx
+        type: file
+      - path: /testdata/base-api/gasestimation
+        type: directory
+        contents:
+        - path: /testdata/base-api/gasestimation/eth_estimateGas.mdx
+          type: file
+        - path: /testdata/base-api/gasestimation/eth_gasPrice.mdx
+          type: file
+        - path: /testdata/base-api/gasestimation/eth_maxPriorityFeePerGas.mdx
+          type: file
+        - path: /testdata/base-api/gasestimation/_meta.json
+          type: file
+      - path: /testdata/base-api/gasestimation.mdx
+        type: file
+      - path: /testdata/base-api/gettinguncles
+        type: directory
+        contents:
+        - path: /testdata/base-api/gettinguncles/eth_getUncleCountByBlockHash.mdx
+          type: file
+        - path: /testdata/base-api/gettinguncles/eth_getUncleCountByBlockNumber.mdx
+          type: file
+        - path: /testdata/base-api/gettinguncles/_meta.json
+          type: file
+      - path: /testdata/base-api/gettinguncles.mdx
+        type: file
+      - path: /testdata/base-api/subscriptions
+        type: directory
+        contents:
+        - path: /testdata/base-api/subscriptions/eth_subscribe.mdx
+          type: file
+        - path: /testdata/base-api/subscriptions/eth_unsubscribe.mdx
+          type: file
+        - path: /testdata/base-api/subscriptions/_meta.json
+          type: file
+      - path: /testdata/base-api/subscriptions.mdx
+        type: file
+      - path: /testdata/base-api/transactionsinfo
+        type: directory
+        contents:
+        - path: /testdata/base-api/transactionsinfo/eth_getTransactionByBlockHashAndIndex.mdx
+          type: file
+        - path: /testdata/base-api/transactionsinfo/eth_getTransactionByBlockNumberAndIndex.mdx
+          type: file
+        - path: /testdata/base-api/transactionsinfo/eth_getTransactionByHash.mdx
+          type: file
+        - path: /testdata/base-api/transactionsinfo/eth_getTransactionCount.mdx
+          type: file
+        - path: /testdata/base-api/transactionsinfo/eth_getTransactionReceipt.mdx
+          type: file
+        - path: /testdata/base-api/transactionsinfo/eth_newPendingTransactionFilter.mdx
+          type: file
+        - path: /testdata/base-api/transactionsinfo/_meta.json
+          type: file
+      - path: /testdata/base-api/transactionsinfo.mdx
+        type: file
+      - path: /testdata/base-api/web3
+        type: directory
+        contents:
+        - path: /testdata/base-api/web3/web3_clientVersion.mdx
+          type: file
+        - path: /testdata/base-api/web3/web3_sha3.mdx
+          type: file
+        - path: /testdata/base-api/web3/_meta.json
+          type: file
+      - path: /testdata/base-api/web3.mdx
+        type: file
+      - path: /testdata/base-api/_meta.json
+        type: file
+    - path: /testdata/drpc_docs.md
+      type: file
+    - path: /testdata/etherscan_documentation.md
+      type: file
+    - path: /testdata/historical_prices.json
+      type: file
+    - path: /testdata/historical_price_analyzer.py
+      type: file
+    - path: /testdata/test.py
+      type: file
+    - path: /testdata/token_prices.json
+      type: file
+    - path: /testdata/token_price_fetcher.py
+      type: file
+    - path: /testdata/transactions_0x579C0C_20250120_145846.json
+      type: file
+    - path: /testdata/transactions_0x579C0C_20250120_145846_enriched.json
+      type: file
+    - path: /testdata/transactions_0xD6980B_20250120_145910.json
+      type: file
+    - path: /testdata/transactions_0xD6980B_20250120_145910_enriched.json
+      type: file
+    - path: /testdata/wallet_analysis.json
+      type: file
+    - path: /testdata/wallet_history_analyzer.py
+      type: file
+    - path: /testdata/wallet_pnl_analyzer.py
+      type: file
+    - path: /testdata/wallet_tracker.py
+      type: file
+  - path: /tsconfig.json
+    type: file
+  - path: /tsconfig.node.json
+    type: file
+  - path: /vite.config.ts
+    type: file

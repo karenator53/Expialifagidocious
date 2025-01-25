@@ -15,6 +15,15 @@ type Token @entity {
   derivedETH: BigDecimal!
 }
 
+type Factory @entity {
+  id: ID!
+  pairCount: BigInt!
+  totalVolumeUSD: BigDecimal!
+  totalLiquidityUSD: BigDecimal!
+  txCount: BigInt!
+  totalValueLockedUSD: BigDecimal!
+}
+
 type Pair @entity {
   id: ID!
   token0: Token!
@@ -72,4 +81,52 @@ type Swap @entity {
 type Bundle @entity {
   id: ID!
   ethPrice: BigDecimal!
+}
+
+type TokenDayData @entity(timeseries: true) {
+  id: Int8!
+  timestamp: Timestamp!
+  token: Token!
+  priceUSD: BigDecimal!
+  volume: BigDecimal!
+  volumeUSD: BigDecimal!
+  liquidity: BigDecimal!
+  liquidityUSD: BigDecimal!
+  txCount: BigInt!
+}
+
+type PairDayData @entity(timeseries: true) {
+  id: Int8!
+  timestamp: Timestamp!
+  pair: Pair!
+  token0Price: BigDecimal!
+  token1Price: BigDecimal!
+  volumeToken0: BigDecimal!
+  volumeToken1: BigDecimal!
+  volumeUSD: BigDecimal!
+  liquidityUSD: BigDecimal!
+  txCount: BigInt!
+}
+
+type TokenHourData @aggregation(intervals: ["hour"], source: "TokenDayData") {
+  id: Int8!
+  timestamp: Timestamp!
+  token: Token!
+  priceUSD: BigDecimal! @aggregate(fn: "last", arg: "priceUSD")
+  highPrice: BigDecimal! @aggregate(fn: "max", arg: "priceUSD")
+  lowPrice: BigDecimal! @aggregate(fn: "min", arg: "priceUSD")
+  volumeUSD: BigDecimal! @aggregate(fn: "sum", arg: "volumeUSD")
+  txCount: BigInt! @aggregate(fn: "sum", arg: "txCount")
+}
+
+type PairHourData @aggregation(intervals: ["hour"], source: "PairDayData") {
+  id: Int8!
+  timestamp: Timestamp!
+  pair: Pair!
+  token0Price: BigDecimal! @aggregate(fn: "last", arg: "token0Price")
+  token1Price: BigDecimal! @aggregate(fn: "last", arg: "token1Price")
+  volumeToken0: BigDecimal! @aggregate(fn: "sum", arg: "volumeToken0")
+  volumeToken1: BigDecimal! @aggregate(fn: "sum", arg: "volumeToken1")
+  volumeUSD: BigDecimal! @aggregate(fn: "sum", arg: "volumeUSD")
+  txCount: BigInt! @aggregate(fn: "sum", arg: "txCount")
 }

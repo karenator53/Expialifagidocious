@@ -1,7 +1,7 @@
-import { BigInt, BigDecimal } from '@graphprotocol/graph-ts'
-import { Swap as SwapEvent } from '../generated/templates/UniswapV2Pair/UniswapV2Pair'
+import { BigInt, BigDecimal, log, ethereum } from '@graphprotocol/graph-ts'
+import { Swap as SwapEvent, Sync as SyncEvent, Transfer as TransferEvent } from '../generated/templates/SonicPair/UniswapV2Pair'
 import { Pair, Swap, Token, Bundle } from '../generated/schema'
-import { UniswapV2Pair } from '../generated/templates/UniswapV2Pair/UniswapV2Pair'
+import { UniswapV2Pair } from '../generated/templates/SonicPair/UniswapV2Pair'
 import { convertTokenToDecimal, ZERO_BD, ONE_BD, ZERO_BI, ONE_BI, bigDecimalAbs } from './utils'
 
 export function handleSwap(event: SwapEvent): void {
@@ -70,4 +70,48 @@ export function handleSwap(event: SwapEvent): void {
   token0.save()
   token1.save()
   swap.save()
+}
+
+export function handleSync(event: SyncEvent): void {
+  let pair = Pair.load(event.address.toHexString())
+  if (pair === null) return
+
+  let token0 = Token.load(pair.token0)
+  let token1 = Token.load(pair.token1)
+  if (token0 === null || token1 === null) return
+
+  let bundle = Bundle.load('1')
+  if (bundle === null) {
+    bundle = new Bundle('1')
+    bundle.ethPrice = ZERO_BD
+    bundle.save()
+  }
+
+  // Update pair reserves
+  pair.reserve0 = convertTokenToDecimal(event.params.reserve0, BigInt.fromI32(token0.decimals))
+  pair.reserve1 = convertTokenToDecimal(event.params.reserve1, BigInt.fromI32(token1.decimals))
+  pair.reserveUSD = pair.reserve0
+    .times(token0.derivedETH.times(bundle.ethPrice))
+    .plus(pair.reserve1.times(token1.derivedETH.times(bundle.ethPrice)))
+
+  // Save entities
+  pair.save()
+}
+
+export function handleTransfer(event: TransferEvent): void {
+  let pair = Pair.load(event.address.toHexString())
+  if (pair === null) {
+    log.warning('Pair not found in handleTransfer: {}', [event.address.toHexString()])
+    return
+  }
+
+  let pairContract = UniswapV2Pair.bind(event.address)
+  let totalSupplyResult = pairContract.try_totalSupply()
+  
+  if (!totalSupplyResult.reverted) {
+    pair.totalSupply = convertTokenToDecimal(totalSupplyResult.value, BigInt.fromI32(18)) // LP tokens have 18 decimals
+    pair.save()
+  } else {
+    log.warning('Failed to get totalSupply for pair: {}', [event.address.toHexString()])
+  }
 } 

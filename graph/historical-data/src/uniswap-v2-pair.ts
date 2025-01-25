@@ -44,12 +44,15 @@ export function handleSwap(event: SwapEvent): void {
 
   // Update pair reserves
   let pairContract = UniswapV2Pair.bind(event.address)
-  let reserves = pairContract.getReserves()
-  pair.reserve0 = convertTokenToDecimal(reserves.value0, BigInt.fromI32(token0.decimals))
-  pair.reserve1 = convertTokenToDecimal(reserves.value1, BigInt.fromI32(token1.decimals))
-  pair.reserveUSD = pair.reserve0
-    .times(token0.derivedETH.times(bundle.ethPrice))
-    .plus(pair.reserve1.times(token1.derivedETH.times(bundle.ethPrice)))
+  let reservesResult = pairContract.try_getReserves()
+  if (!reservesResult.reverted) {
+    pair.reserve0 = convertTokenToDecimal(reservesResult.value.value0, BigInt.fromI32(token0.decimals))
+    pair.reserve1 = convertTokenToDecimal(reservesResult.value.value1, BigInt.fromI32(token1.decimals))
+    pair.reserveUSD = pair.reserve0
+      .times(token0.derivedETH.times(bundle.ethPrice))
+      .plus(pair.reserve1.times(token1.derivedETH.times(bundle.ethPrice)))
+  }
+  // If reserves call reverted, we'll keep the old reserves
 
   // Create swap event
   let swap = new Swap(event.transaction.hash.toHexString().concat('-').concat(event.logIndex.toString()))
